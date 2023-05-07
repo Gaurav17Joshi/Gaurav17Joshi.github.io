@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    My GSoC Journey - Part 5 - Blogs
+    
+  </title>
+
+  <meta name="description" content="After an adventurous journey throughout these five months, starting with knowing very little about GNU, Python packaging, Docker, Build systems and CI/CD to ...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/Blogs/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="http://localhost:4000/Blogs/2022/07/20/Final-GSoC-Submission.html">
+  <link rel="alternate" type="application/rss+xml" title="Blogs" href="/Blogs/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/Blogs/">Blogs</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/Blogs/img/posts/gsoc-final/finish-line.webp')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>My GSoC Journey - Part 5</h1>
+            
+            <h2 class="subheading">Final Submission !</h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Jash Shah</a>
+              on July 20, 2022 · <span class="reading-time" title="Estimated read time">
+  
+   7 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <p><em>After an adventurous journey throughout these five months, starting with knowing very little about GNU, Python packaging, Docker, Build systems and CI/CD to having a Python package on PyPI, this is a final summary of all my work throughout GSoC 2022!</em></p>
+
+<h2 id="about-pygnuastro">About pyGnuastro</h2>
+
+<h3 id="links">Links</h3>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Topic<br>
+</th>
+    <th class="tg-0pky">Links</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">GitHub</td>
+    <td class="tg-0pky"><a href="https://github.com/Jash-Shah/pyGnuastro"><span style="color:#905">https://github.com/Jash-Shah/pyGnuastro</span></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">PyPI</td>
+    <td class="tg-0pky"><a href="https://test.pypi.org/project/pygnuastro/"><span style="color:#905">https://test.pypi.org/project/pygnuastro/</span></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Documentation</td>
+    <td class="tg-0pky">&lt;ADD LINK TO DOCS&gt;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Docker Images</td>
+    <td class="tg-0pky"><a href="https://hub.docker.com/repository/registry-1.docker.io/jashshah1401/pygnuastro/tags?page=1&amp;ordering=last_updated"><span style="color:#905">https://hub.docker.com/repository/registry-1.docker.io/jashshah1401/pygnuastro/tags?page=1&amp;ordering=last_updated</span></a></td>
+  </tr>
+</tbody>
+</table>
+<p><br></p>
+
+<h3 id="description">Description</h3>
+<p>The pyGnuastro python package is a free software which aims to offer a wide array of functions
+for astronomical data manipulation and analysis. It is the Python 
+implementation of <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/gnuastro.html">GNU Astronomy Utilities</a>
+and aims to offer all the functionality of Gnuastro
+but with a higher level of abstracion.</p>
+
+<h3 id="need">Need</h3>
+<p>While <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Gnuastro-library.html">Gnuastro’s Library</a>
+and its <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/General-program-usage-tutorial.html">Binary programs</a>
+provides extensive and fine-tuned functionality,
+it’s tough to deny the versitality and ease of usage that a language like
+Python brings. Being dynamically typed and high-level makes
+it simple for novice programmers to interact with Gnuastro’s programs.
+Additionally, since many of Gnuastro’s use cases require working with data
+arrays, integrating libraries like <a href="https://numpy.org/doc/stable/index.html">NumPy</a>
+makes data analysis and manipulation more accessible.</p>
+
+<h2 id="work-done-throughout-gsoc">Work done throughout GSoC</h2>
+
+<ol>
+  <li>
+    <p>Learned about <a href="https://docs.python.org/3/extending/extending.html">Python Extensions</a>, <a href="py.org/doc/stable/reference/c-api/index.html">NumPy C-API</a>, <a href="https://setuptools.pypa.io/en/latest/userguide/ext_modules.html">setuptools</a>, <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Library.html">Gnuastro library</a> and tried out some <a href="https://github.com/Jash-Shah/python-extension-practice">examples</a> of the same.</p>
+  </li>
+  <li>
+    <p>Learned about the GNU Build system, mainly <a href="https://www.gnu.org/software/autoconf/">Autoconf</a> and <a href="https://www.gnu.org/software/automake/">Automake</a>.</p>
+  </li>
+  <li>
+    <p>Started by trying to package the python modules with the Gnuastro itself. The first module tried was <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Cosmology-library.html"><code class="language-plaintext highlighter-rouge">cosmology</code></a> since it doesn’t have any external dependencies and only a few basic functions. <a href="https://github.com/Jash-Shah/gnuastro-jash/commit/6997730fab6cb18fd7b34f77f9a0f65f0c7e0730">Commit</a>.</p>
+  </li>
+  <li>
+    <p>However, after discussing with my Mentor we came to the conclusion that trying to combine Python and GNU build systems wasn’t the best approach. So we decided to make a separate Python package called <code class="language-plaintext highlighter-rouge">pyGnuastro</code> which would be distributed as its own separate Python package and be available on PyPI!</p>
+  </li>
+  <li>
+    <p>Added a <a href="https://github.com/Jash-Shah/gnuastro-jash/commit/ed301e20c831a276da77dd1b8f138695f672359e">Python Interface</a>(<a href="http://akhlaghi.org/gnuastro.pdf">doc (section 12.3.29 pg717) </a>) module to the Gnuastro Library to provide the utility functions that will be required by the Python wrappers.</p>
+  </li>
+  <li>
+    <p>Learned about <a href="https://realpython.com/python-wheels/">Python Wheels</a>. pyGnuastro depends on the Gnuastro library which in turn has its own <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Dependencies.html">dependencies</a>. So, in order to ensure a smooth installation experience for users, we make use of <a href="https://pypi.org/pypi/auditwheel/"><code class="language-plaintext highlighter-rouge">auditwheel</code></a>(<a href="https://pypi.org/project/delocate/"><code class="language-plaintext highlighter-rouge">delocate</code></a> for MacOS) to build <a href="https://github.com/pypa/manylinux"><code class="language-plaintext highlighter-rouge">manylinux</code> wheels</a>. These wheels include all the dependencies in the distributed package itself rather than depending on the users to install, build and link to them <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20"></p>
+  </li>
+  <li>
+    <p>Created the <a href="https://packaging.python.org/en/latest/overview/">structure of the Python package</a> with the <a href="https://github.com/Jash-Shah/pyGnuastro/blob/main/setup.py"><code class="language-plaintext highlighter-rouge">setup.py</code></a> script to build the extensions.</p>
+  </li>
+  <li>
+    <p>Built a <a href="https://hub.docker.com/repository/registry-1.docker.io/jashshah1401/pygnuastro/tags?page=1&amp;ordering=last_updated">custom docker image</a> using <a href="http://www.maneage.org"><code class="language-plaintext highlighter-rouge">maneage</code></a>. Worked with my mentor to create a build script for maneage which builds the gnuastro library statically(<a href="https://gitlab.com/makhlaghi/gnuastro-in-maneage-static">repo with reproducible instructions</a>) by taking  <code class="language-plaintext highlighter-rouge">quay.io/pypa/manylinux2014_x86_64</code> as the base image. This ensures that only <strong>one</strong> library is included in the pyGnuastro distribution. This reduces the size, increases portability and speeds up the installation of pyGnuastro <img class="emoji" title=":stars:" alt=":stars:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f320.png" height="20" width="20"></p>
+  </li>
+  <li>
+    <p>Created a <a href="https://github.com/Jash-Shah/pyGnuastro/blob/main/.github/workflows/build.yml">workflow script</a> using GitHub workflows to build wheels for <code class="language-plaintext highlighter-rouge">manylinux</code> images, MacOS and source distributions of pyGnuastro.</p>
+  </li>
+</ol>
+
+<h2 id="future-improvements">Future Improvements</h2>
+<p>pyGnuastro is still in its ideation phase. The major work of figuring out the build system, setting up the docker image and the workflow now allows for a quick process to add more funcionality. The major improvements include:</p>
+<ul>
+  <li>More concise documentation with focus on reproducibility</li>
+  <li>Add more modules, currently we only have two i.e. <code class="language-plaintext highlighter-rouge">cosmology</code> and <code class="language-plaintext highlighter-rouge">fits</code>
+</li>
+  <li>Add support for custom data types in Python for better interfacing. For eg: All the <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Linked-lists.html">list data types in Gnuastro</a> can have their corresponding python versions</li>
+  <li>Add support for more platforms. Create a system similar to the current implementation of the <code class="language-plaintext highlighter-rouge">maneage-manylinux2014_x86_64</code> docker for other manylinux images as well</li>
+  <li>Add integration with other packages like OpenCV, matplotlib, scipy, etc just like NumPy.</li>
+  <li>Better infrastructure and full automated maintainence of the GitHub repo to make it the sole place for all information related to pyGnuastro</li>
+  <li>Add modules for the binary programs for Gnuastro as well just like the library functions. This can be done by either defining library functions which perform similar tasks as the binary program or implement some custom modules to replicate the behaviour of binary programs in Python</li>
+  <li>Perform efficiency comparisons with other implementations once the package reaches a mature state</li>
+</ul>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>I had a great time working with everyone at Gnuastro. I would like to specially thank my mentor, <a href="https://akhlaghi.org/">Mohammad Akhlaghi</a> and my “unofficial” co-mentor <a href="https://pedramardakani.wordpress.com/">Pedram Ashofteh</a> for their continuous support and motivation. The kind of community Mohammad has created with Gnuastro still amazes me. It felt more like being a part of a team than an organization at Gnuastro because of how inclusive, supportive, and collaborative the working environment is. I was always given tasks that were quite clear. All my questions were patiently and clearly addressed, no matter how “silly” they were. There were never any hard-set deadlines imposed upon me, which allowed me to explore the domains involved in my project more freely and made for an overall better experience. I also appreciate the fact that mistakes made by me were returned with concise criticism rather than being reprimanded for them. Through the mentorship, I learned both the technicalities and the philosophies behind writing good code. Even though I’ve not been able to meet all the deliverables mentioned in my initial proposal, I plan to work with Gnuastro to finish my project and also contribute to its codebase in general.</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/Blogs/2022/07/20/How-low-can-you-go.html" data-toggle="tooltip" data-placement="top" title="My GSoC Journey - Part 4">← Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/Blogs/2022/12/31/Finguitar-First-Hackathon-Experience.html" data-toggle="tooltip" data-placement="top" title="Finguitar">Next<span class="d-none d-md-inline">
+              Post</span> →</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:gauravcjoshi17@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/gaurav17joshi">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright © Jash Shah 2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Blogs/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/Blogs/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

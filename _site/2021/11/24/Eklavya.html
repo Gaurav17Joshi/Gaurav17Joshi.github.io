@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    Persistence and PIDs - Blogs
+    
+  </title>
+
+  <meta name="description" content="Persistence and PIDs: Our Journey in Drone Design">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/Blogs/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="http://localhost:4000/Blogs/2021/11/24/Eklavya.html">
+  <link rel="alternate" type="application/rss+xml" title="Blogs" href="/Blogs/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/Blogs/">Blogs</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/Blogs/img/drone-bg.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>Persistence and PIDs</h1>
+            
+            <h2 class="subheading">Our Journey in Drone Design</h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Jash Shah</a>
+              on November 24, 2021 · <span class="reading-time" title="Estimated read time">
+  
+   26 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h1 id="persistence-and-pids-our-journey-in-drone-design">Persistence and PIDs: Our Journey in Drone Design</h1>
+
+<p>Strange title isn’t it? It manages to sum up our experience with this project quite well though. For the Eklavya Mentorship program, my teammate and I undertook the task of building a drone from scratch and designing it’s control system.</p>
+
+<p>Quite an intimidating task for the both of us, given that we were complete beginners in almost all areas of robotics. Thankfully we had the guidance of some great mentors and an amazing community thanks to our college club: <a href="https://sravjti.in/">SRA</a>.</p>
+
+<blockquote>
+  <p>Q: So how does one go about building a drone?</p>
+</blockquote>
+
+<blockquote>
+  <p>A: You design it first <img class="emoji" title=":pencil:" alt=":pencil:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" height="20" width="20"></p>
+</blockquote>
+
+<h2 id="search-design-develop">Search, Design, Develop</h2>
+
+<p>We started out at the same place everyone does when they need to do something but don’t know how to: <strong>YouTube</strong></p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/search-results.png" alt="youtube search results"></p>
+
+<p>Incidentally we went for the <strong>fourth video</strong> in this list, mainly because it looked cool</p>
+
+<p>Then came the fun but arduous task of actually making the Drone in SolidWorks. It involved three steps:</p>
+
+<ol>
+  <li>Making each individual part and saving it as a SolidWorks part file (.sldprt).</li>
+  <li>Adding all the parts in an Assembly file and liniking them together using different joints (but mostly prismatic) to create the drone assembly file.</li>
+  <li>Then came the most crucial part, making the drone look sleek &amp; sexy (actually not that important).</li>
+</ol>
+
+<blockquote>
+  <p>Tip : Pick a nice 2 hr long album, couple of cups of Mocha and designing in SolidWorks turns into a meditative act. <img class="emoji" title=":coffee:" alt=":coffee:" src="https://github.githubassets.com/images/icons/emoji/unicode/2615.png" height="20" width="20"></p>
+</blockquote>
+
+<p>After quite a few hours in Solidworks, our finished model was ready.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone1.jpg" alt="Original Drone 1"></p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone2.jpg" alt="Original Drone 2"></p>
+
+<p>Now, to actually be able to simulate this model and control it via ROS we needed to convert our SolidWorks assembly into a URDF (<a href="https://wiki.ros.org/urdf">Universal Robot Description Format</a>). Fortunately, some kind-hearted soul had thought of adding an extension in SolidWorks where-by we could natively export our assembly into an URDF (God Bless the resourcefulness of programmers!).</p>
+
+<h2 id="softwares-and-simulators">Softwares and Simulators</h2>
+
+<p>This step involves us trying to build our Drone a playground to experiment in. It uses two softwares which are going to be critical going forward :</p>
+
+<h3 id="1-ros-robot-operating-system">1. ROS (Robot Operating System)</h3>
+
+<p><a href="https://ros.org/">ROS</a> is an open-source, meta-operating system for your robot. Basically ROS enables us to control our Drone (and its specific parts) using Python/C++ code. ROS communication implements data transmission between <strong>Nodes</strong> using <strong>Topics</strong>.</p>
+
+<h4 id="ros-node">ROS Node</h4>
+
+<p>All processes in ROS run in a Node. For eg: In our Drone each Wing Link (the joint between the wing and the base), the camera, IMU sensors are all nodes. The python script we write itself creates many nodes.</p>
+
+<h4 id="ros-topics">ROS Topics</h4>
+
+<p>Topics are the <em>named</em> channels over which the nodes exchange messages. Topics can be either:
+<strong>subscribed to</strong> - For sending data through the topic.
+<strong>published to</strong> - For recieving data from the topic.</p>
+
+<p>So, suppose we want to change the speed of wing link 1 of our Drone from 10 to 100 using a python script. Then to implement it in ROS, it would look as follows:</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Node-Diag.jpg" alt="Python Script creates Node---(pubs to pwm topic)----------------------------------(subs to pwm topic)----&gt; Wing Link Node"></p>
+
+<h3 id="2-gazebo">2. Gazebo</h3>
+
+<p>Gazebo is ROS’ native simulation software which entirely is a Node in itself! (props to ROS devs for sticking to their guns with their comms sytem). It can open our URDF file in a simulated world.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone_gazebo1.jpeg" alt="First model in gazebo"></p>
+
+<p>However this “lo and behold!” moment turned sour pretty quick when we saw that none of the textures in our mesh files got registered. After banging our heads for sometime we finally found a solution which involved using Blender (of all things) to “re-texturize” our model and then export the meshes as .stl files.</p>
+
+<h2 id="a-world-to-fly-in">A World to Fly In</h2>
+
+<p>World building is a fancy way of making our drone respond to the numerous physical phenomena in the simulated world as it would in the real world (yes, that still exists). This means giving it propulsion so that upon the wings spinning, enough thrust would be generated to make the drone rise in the sky like a pheonix! Also attaching various sensors like:</p>
+
+<ol>
+  <li>GPS - For getting position and velocity.</li>
+  <li>IMU - For getting orientation.</li>
+  <li>Camera - For visualizing its surroundings.</li>
+</ol>
+
+<p>We had planned to just use some pre-built propulsion and sensor plugins and add them to our URDF and move on to the next part but <em>Ohhh no no</em>; The ROS Gods had some other plans in mind. The plugins seemed damn near incompatible with our model! Anytime we would try to run the simulation the drone would just twitch and sway like it was <em>overly attached</em> to the ground.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone_gazebo2.gif" alt="First Model in Gazebo"></p>
+
+<p>Turns out the problem was with the wing joints not being registered as revolute. However, even though we got a <strong><em>somewhat</em></strong> what more stable system after fixing that, the drone would still not lift. There were many painful days spent scouring all sorts of forums, drearily trying to sniff out even a <strong><em>whiff</em></strong> of a solution.
+Finally we did what most programmers do when they can’t find a solution to a problem….we just took someone else’s model and abandoned ours. And trying to stick to our <em>high standards</em> this someone else was none other than IIT Bombay (specifically the model they provided for their <a href="https://new.e-yantra.org/eyrc">E-Yantra 2020</a> competition).</p>
+
+<p>And Finally! after about two weeks (which felt like a month) of debugging we had a flying drone!</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/drone_start.png" alt="ERYC Model"></p>
+
+<p>And thus with our model and world set up, we were ready to move onto building the control system.</p>
+
+<h2 id="take-control-of-your-system">Take Control of your System</h2>
+<p>No matter how complex the control theory is, at the end of the day what we can control about the drone are simply the motor speeds i.e. how fast the fans at the end spin.
+But to accomplish more complicated tasks with the drone (moving, stablilising etc.) we must make some <em>layers</em> that control these motors according to human inputs.
+This is the flow of the drone control system. We’ll go into the individual components going ahead but as an overview:</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/PID_Diagram.png" alt="PID Diagram"></p>
+
+<p>The user gives input co-ordinates and a target altitude for the drone. Our goal was to get the drone to fly to the target co-ords autonomously. 
+To accomplish this we needed to know a few things:</p>
+<ol>
+  <li>Where it was <code class="language-plaintext highlighter-rouge">(duh!)</code>
+</li>
+  <li>What its velocity was</li>
+  <li>What its orientation was</li>
+</ol>
+
+<h4 id="where-are-you-drone">Where are you Drone?</h4>
+
+<p>To get its position we had two options, since the drone was in a simulation, we could just ask gazebo to tell us where the model was. Otherwise, we could have the onboard GPS give us the latitude and longitude positions of the drone.</p>
+
+<p>Both of these approaches were nearly identical. We went with getting the X-Y co-ordinates from Gazebo since it was much more intuitive to give it input co-ords than arbitrary latitude - longitude values.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Subscriber to Model State
+</span><span class="n">rospy</span><span class="p">.</span><span class="nc">Subscriber</span><span class="p">(</span><span class="s">"/gazebo/model_states"</span><span class="p">,</span><span class="n">ModelStates</span><span class="p">,</span><span class="n">calPosition</span><span class="p">)</span>
+<span class="c1">#Callback function
+</span><span class="k">def</span> <span class="nf">calPosition</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">pose</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">pose</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="slow-down-drone">Slow Down Drone!</h4>
+
+<p>Another important aspect was its speed, if the drone went too fast it risked destabilising itself and flipping over. Hence we had to maintain a careful control over its speed.</p>
+
+<p>We obtained the velocity values via the GPS onboard the drone.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Subscriber to gps
+</span><span class="n">vel_sub</span> <span class="o">=</span> <span class="n">message_filters</span><span class="p">.</span><span class="nc">Subscriber</span><span class="p">(</span><span class="s">"/edrone/gps_velocity"</span><span class="p">,</span> <span class="n">Vector3Stamped</span><span class="p">)</span>
+<span class="c1">#callback function isn't immediately defined as we need to pack velocity, xyz and rpy values together after getting them from the drone
+</span>
+<span class="k">def</span> <span class="nf">calVelocity</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">vel_x</span><span class="p">,</span> <span class="n">vel_y</span><span class="p">,</span> <span class="n">vel_z</span>
+    <span class="n">vel_x</span> <span class="o">=</span> <span class="n">msg</span><span class="p">.</span><span class="n">vector</span><span class="p">.</span><span class="n">x</span>
+    <span class="n">vel_y</span> <span class="o">=</span> <span class="n">msg</span><span class="p">.</span><span class="n">vector</span><span class="p">.</span><span class="n">y</span>
+    <span class="n">vel_z</span> <span class="o">=</span> <span class="n">msg</span><span class="p">.</span><span class="n">vector</span><span class="p">.</span><span class="n">z</span>
+</code></pre></div></div>
+
+<h4 id="dont-flip-out-drone">Don’t Flip Out Drone!</h4>
+
+<p>The IMU (<a href="https://en.wikipedia.org/wiki/Inertial_measurement_unit">Inertial Measurement Unit</a>) also gets us the orientation of the drone or its Roll, Pitch and Yaw. Fancy terms to describe how tilted it is with X, Y and Z axes</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Roll-Pitch-Yaw.jpg" alt="Roll, Pitch, Yaw image"></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Similar to the velocity subscriber
+</span><span class="n">imu_sub</span> <span class="o">=</span> <span class="n">message_filters</span><span class="p">.</span><span class="nc">Subscriber</span><span class="p">(</span><span class="s">"/edrone/imu/data"</span><span class="p">,</span> <span class="n">Imu</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">calImu</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="c1">#variables recieved from the IMU are unpacked
+</span>    <span class="n">orinetation_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">z</span><span class="p">,</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span><span class="p">]</span>
+    <span class="k">global</span> <span class="n">roll</span><span class="p">,</span> <span class="n">pitch</span><span class="p">,</span> <span class="n">yaw</span>
+    <span class="p">(</span><span class="n">roll</span><span class="p">,</span><span class="n">pitch</span><span class="p">,</span><span class="n">yaw</span><span class="p">)</span> <span class="o">=</span> <span class="nf">euler_from_quaternion</span><span class="p">(</span><span class="n">orinetation_list</span><span class="p">)</span>
+    <span class="n">roll</span> <span class="o">=</span> <span class="n">roll</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="mf">3.14159265</span><span class="p">)</span>
+    <span class="n">pitch</span> <span class="o">=</span> <span class="n">pitch</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="mf">3.14159265</span><span class="p">)</span>
+    <span class="n">yaw</span> <span class="o">=</span> <span class="n">yaw</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="mf">3.14159265</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>These values always need to be in a small acceptable range, otherwise the drone will not be able to fly properly. (<em>flying</em> being sort of an important feature of a drone <img class="emoji" title=":joy:" alt=":joy:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f602.png" height="20" width="20">)</p>
+
+<blockquote>
+  <p>Q: Okay, but how does all this info really help us getting the drone to do what we want? Since at the end of the day, all we can really control are motor speeds.</p>
+</blockquote>
+
+<blockquote>
+  <p>A: This is where the <strong>motor mixing algorithm</strong> comes in</p>
+</blockquote>
+
+<h4 id="meet-thy-motors">Meet Thy Motors</h4>
+
+<p>Using advanced mathematical methods of analysis, some <em>very smart</em> people have come up with a way to control roll, pitch and yaw through just the motor speeds.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">speed</span> <span class="o">=</span> <span class="nf">prop_speed</span><span class="p">()</span> <span class="c1">#custom message type defined for the project
+# Equation for the speed of each propeller
+</span><span class="n">speed</span><span class="p">.</span><span class="n">prop1</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">-</span> <span class="n">output_yaw</span> <span class="o">+</span> <span class="n">output_pitch</span> <span class="o">-</span> <span class="n">output_roll</span><span class="p">)</span>
+
+<span class="n">speed</span><span class="p">.</span><span class="n">prop2</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">+</span> <span class="n">output_yaw</span> <span class="o">+</span> <span class="n">output_pitch</span> <span class="o">+</span> <span class="n">output_roll</span><span class="p">)</span>
+
+<span class="n">speed</span><span class="p">.</span><span class="n">prop3</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">-</span> <span class="n">output_yaw</span> <span class="o">-</span> <span class="n">output_pitch</span> <span class="o">+</span> <span class="n">output_roll</span><span class="p">)</span>
+
+<span class="n">speed</span><span class="p">.</span><span class="n">prop4</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">+</span> <span class="n">output_yaw</span> <span class="o">-</span> <span class="n">output_pitch</span> <span class="o">-</span> <span class="n">output_roll</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>For our part, we took them at their word and stuck this as the final component of our control system.</p>
+
+<p><em>Et voilà!</em> our drone could fly and move according to our commands!</p>
+
+<p>Well…. not exactly. There’s one component that comes in between that I’ve avoided talking about so far: <strong>PIDs</strong>.</p>
+
+<h2 id="persistence-and-pids">Persistence and PIDs</h2>
+
+<p>PID stands for Proportional, Integral, Derivative. If the name sounds scary don’t be afraid, PIDs are relatively simple to implement and get running.</p>
+
+<p>All it is, is a way for the system (drone) to be able to bring itself towards a target value by correcting its error.</p>
+
+<p>In this case, PIDs operate between Roll, Pitch, Yaw, Thrust values and the Motor Mixing Algorithm. They consider the taget values, look at the current values and then decide if the motor speeds should be higher or lower to get to the target values and how high and how low these values should be.</p>
+
+<p>(PID diagram with the fancy E symbol)
+<img src="/Blogs/img/posts/eklavya-drone/pid-formuals.png" alt="PID Theory Diagram"></p>
+
+<p>The code is relatively simple</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Code for the Altitude PID
+# Speed found from testing at which drone hovers at a fixed height
+</span><span class="n">hover_speed</span> <span class="o">=</span> <span class="mf">508.75</span>
+<span class="c1"># Altitude error
+</span><span class="n">dErr_alt</span> <span class="o">=</span> <span class="n">current_alt_err</span> <span class="o">-</span> <span class="n">prev_alt_err</span>
+<span class="c1"># Proportional terms
+</span><span class="n">pMem_alt</span> <span class="o">=</span> <span class="n">current_alt_err</span>
+<span class="c1"># Integral Terms(i(t))
+</span><span class="n">iMem_alt</span> <span class="o">+=</span> <span class="n">current_alt_err</span> <span class="o">*</span> <span class="n">dTime</span>
+<span class="c1"># limit integrand values
+</span><span class="nf">if</span><span class="p">(</span><span class="n">iMem_alt</span> <span class="o">&gt;</span> <span class="mi">800</span><span class="p">):</span> <span class="n">iMem_alt</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="nf">if</span><span class="p">(</span><span class="n">iMem_alt</span> <span class="o">&lt;-</span><span class="mi">800</span><span class="p">):</span> <span class="n">iMem_alt</span> <span class="o">=</span> <span class="o">-</span><span class="mi">800</span>
+<span class="c1"># Derivative Terms(d(t))
+</span><span class="n">dMem_alt</span> <span class="o">=</span> <span class="n">dErr_alt</span> <span class="o">/</span> <span class="n">dTime</span>
+<span class="n">prev_alt_err</span> <span class="o">=</span> <span class="n">current_alt_err</span>
+<span class="n">output_alt</span> <span class="o">=</span> <span class="n">kp_thrust</span><span class="o">*</span><span class="n">pMem_alt</span> <span class="o">+</span> <span class="n">ki_thrust</span><span class="o">*</span><span class="n">iMem_alt</span> <span class="o">+</span> <span class="n">kd_thrust</span><span class="o">*</span><span class="n">dMem_alt</span>
+<span class="c1"># Final thrust
+</span><span class="n">thrust</span> <span class="o">=</span> <span class="n">hover_speed</span> <span class="o">+</span> <span class="n">output_alt</span><span class="o">*</span><span class="mf">2.5</span>
+</code></pre></div></div>
+
+<p>Now you may have noticed the p_term, i_term and d_terms. What are they? They’re values that are multiplied to the error. Doing so, they adjust the output and keep it <em>juust</em> right so that the system (drone) remains stable.</p>
+
+<p>The horror? These values are <strong>random</strong>.
+Let me say that again, THESE VALUES ARE <strong>RANDOM</strong> !!!</p>
+
+<p>Since each system is different, so are these values. While there are a few broad guidelines to tuning PIDs, they are, <em>by and large</em> left in the hands of the users themselves.</p>
+
+<blockquote>
+  <p>Q: How does one determine the <em>variables</em> that determine the <strong>fate</strong> of your system?</p>
+</blockquote>
+
+<blockquote>
+  <p>A: Trial and error <img class="emoji" title=":slightly_smiling_face:" alt=":slightly_smiling_face:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f642.png" height="20" width="20"></p>
+</blockquote>
+
+<ul>
+  <li>Cue trying to get the drone to move autonomously 🤖</li>
+  <li>Cue countless hours of frustration 😠</li>
+  <li>Cue the poor drone being used and abused for a week straight by 3 sliding knobs 🎛️</li>
+</ul>
+
+<h2 id="flying-is-hard">Flying is Hard</h2>
+
+<p>After a couple of days of PID tuning, our drone could take off and hover stably above the ground.
+<img src="/Blogs/img/posts/eklavya-drone/drone_hover.gif" alt="Drone hovering"></p>
+
+<p>But now came the next part of our project, <em>autonomous movement</em>. Autonomous movement is difficult for a couple of reasons:</p>
+
+<ol>
+  <li>The drone needs to orient itself to move towards the desired point</li>
+  <li>When it reaches the desired point, the drone needs to orient itself such that it stops there</li>
+</ol>
+
+<p>It was no. 2 which gave us the most grief. As the drone flew to a co-ordinate, it was simply <strong>unable</strong> to stop itself there. It then <em>overshot</em> the point and <em>backtracked</em> but the backtracking also couldn’t stop itself properly. Leading into a self-sustaining cycle of osciallations that only grew stronger with time.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/oscillations.png" alt="Graph of oscialltions increasing with time"></p>
+
+<p>Despite frenzied searches on forums, meetings with mentors and conversations with each other we found only one solution to our problems. <strong>Tune the PIDs</strong></p>
+
+<blockquote>
+  <p>Q: How long can a person edit random values whose output seems only to worsen with increasing effort?</p>
+</blockquote>
+
+<blockquote>
+  <p>A: 30 mins for <em>frustration</em> -&gt; 1 hr for <em>despair</em> -&gt; 2 hrs to contemplate <em>giving up</em> -&gt; 30 mins in between to restore the spirit <img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></p>
+</blockquote>
+
+<p>This was our daily schedule for nearly <strong><em>7-8 agonizing days</em></strong>. Given that we had only <em>1 month</em> to complete the project and we had already lost a lot of time with the issues of our model, our efforts were only getting more and more frenzied as the deadline approached.</p>
+
+<p>And still we kept on going, and going, and going……</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">dTime</span> <span class="o">=</span> <span class="n">current_time</span> <span class="o">-</span> <span class="n">prevTime</span>
+<span class="n">dErr_x</span> <span class="o">=</span> <span class="n">err_x</span> <span class="o">-</span> <span class="n">prevErr_x</span>
+<span class="n">dErr_y</span> <span class="o">=</span> <span class="n">err_y</span> <span class="o">-</span> <span class="n">prevErr_y</span>
+<span class="n">dErr_vel_x</span> <span class="o">=</span> <span class="n">err_vel_x</span> <span class="o">-</span> <span class="n">prevErr_vel_x</span>
+<span class="n">dErr_vel_y</span> <span class="o">=</span> <span class="n">err_vel_y</span> <span class="o">-</span> <span class="n">prevErr_vel_y</span>
+
+<span class="n">pMem_x</span> <span class="o">=</span> <span class="n">kp_x</span><span class="o">*</span><span class="n">err_x</span>
+<span class="n">pMem_y</span> <span class="o">=</span> <span class="n">kp_y</span><span class="o">*</span><span class="n">err_y</span>
+<span class="n">pMem_vel_x</span> <span class="o">=</span> <span class="n">kp_vel_x</span><span class="o">*</span><span class="n">err_x</span>
+<span class="n">pMem_vel_y</span> <span class="o">=</span> <span class="n">kp_vel_y</span><span class="o">*</span><span class="n">err_y</span>
+
+<span class="n">iMem_x</span> <span class="o">+=</span> <span class="n">err_x</span><span class="o">*</span><span class="n">dTime</span>
+<span class="n">iMem_y</span> <span class="o">+=</span> <span class="n">err_y</span><span class="o">*</span><span class="n">dTime</span>
+<span class="n">iMem_vel_x</span> <span class="o">+=</span> <span class="n">err_vel_x</span><span class="o">*</span><span class="n">dTime</span>
+<span class="n">iMem_vel_y</span> <span class="o">+=</span> <span class="n">err_vel_y</span><span class="o">*</span><span class="n">dTime</span>
+
+<span class="n">dMem_x</span> <span class="o">=</span> <span class="n">dErr_x</span><span class="o">/</span><span class="n">dTime</span>
+<span class="n">dMem_y</span> <span class="o">=</span> <span class="n">dErr_y</span><span class="o">/</span><span class="n">dTime</span>
+<span class="n">dMem_vel_x</span> <span class="o">=</span> <span class="n">dErr_vel_x</span><span class="o">/</span><span class="n">dTime</span>
+<span class="n">dMem_vel_y</span> <span class="o">=</span> <span class="n">dErr_vel_y</span><span class="o">/</span><span class="n">dTime</span>
+
+<span class="n">output_x</span> <span class="o">=</span> <span class="n">pMem_x</span> <span class="o">+</span> <span class="n">ki_x</span><span class="o">*</span><span class="n">iMem_x</span> <span class="o">+</span> <span class="n">kd_x</span><span class="o">*</span><span class="n">dMem_x</span>
+<span class="n">output_y</span> <span class="o">=</span> <span class="n">pMem_y</span> <span class="o">+</span> <span class="n">ki_y</span><span class="o">*</span><span class="n">iMem_y</span> <span class="o">+</span> <span class="n">kd_y</span><span class="o">*</span><span class="n">dMem_y</span>
+<span class="n">output_vel_x</span> <span class="o">=</span> <span class="n">pMem_vel_x</span> <span class="o">+</span> <span class="n">ki_vel_x</span><span class="o">*</span><span class="n">iMem_vel_x</span> <span class="o">+</span> <span class="n">kd_vel_x</span><span class="o">*</span><span class="n">dMem_vel_x</span>
+<span class="n">output_vel_y</span> <span class="o">=</span> <span class="n">pMem_vel_y</span> <span class="o">+</span> <span class="n">ki_vel_y</span><span class="o">*</span><span class="n">iMem_vel_y</span> <span class="o">+</span> <span class="n">kd_vel_y</span><span class="o">*</span><span class="n">dMem_vel_y</span>
+
+<span class="nf">if</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">err_x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">and</span> <span class="nf">abs</span><span class="p">(</span><span class="n">vel_x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.35</span><span class="p">):</span>
+    <span class="n">dampner</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">vel_x</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.01</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Dampner: "</span><span class="p">,</span> <span class="n">dampner</span><span class="p">)</span>
+    <span class="n">setpoint_pitch</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">vel_x</span> <span class="o">*</span> <span class="mf">1.01</span>  <span class="o">-</span> <span class="n">dampner</span><span class="p">)</span> <span class="c1">#in the direction opposite to velocity
+</span>    <span class="n">setpoint_pitch</span> <span class="o">=</span> <span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_pitch</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_pitch</span>
+    <span class="n">setpoint_pitch</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_pitch</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_pitch</span>
+
+<span class="nf">if</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">err_y</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="p">):</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="n">output_y</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nf">if</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">err_y</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">and</span> <span class="nf">abs</span><span class="p">(</span><span class="n">vel_y</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.35</span><span class="p">):</span>
+    <span class="n">dampner_y</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">vel_y</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.01</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="p">(</span><span class="n">vel_y</span> <span class="o">*</span> <span class="mf">2.0</span>  <span class="o">-</span> <span class="n">dampner_y</span><span class="p">)</span> <span class="c1">#in the direction opposite to velocity
+</span>    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_roll</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_roll</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_roll</span> <span class="o">&lt;-</span><span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_roll</span>
+
+</code></pre></div></div>
+
+<p><strong>One day before the deadline</strong>, with the help of the code written above and PID values that unbelievably seemed to align. <strong>We got it working</strong></p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Final_output.gif" alt="Final Output"></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Being First Year Computer Science students this was the first “real” big team project we had worked on. Here are a few things we learnt (sometimes painfully so) about not only developing but working on any project in general:</p>
+<ul>
+  <li>Learning becomes much more fun if you get to apply it alongside! 🧑‍🔬</li>
+  <li>Having well-thought and curated resources can go a loooong way. 📚</li>
+  <li>There SHOULD be a course for effective Googling taught in all schools. 💻</li>
+  <li>The best Mentors are the ones who can guide and nudge you in the right directions while letting you figuring out the solutions on your own. 🧑‍🏫</li>
+  <li>Having a teammate who you can understand and communicate with easily makes any project 50% easier and a 100% more fun! 🥳</li>
+  <li>The final vision of a project is much <strong>much</strong> different at the beginning than the end. 👓</li>
+  <li>Having to scale back your orignal goals to meet deadlines isn’t as much accepting defeat as it is an exercise in prioritization. 😣🏆</li>
+</ul>
+
+<p>So, to any of our fellow programmers or just anyone who cared to read till this point if there’s anything to take away from this blog post, it’s that <strong>no matter what you want to do, you have the capacity to do it. Even if you have no idea how to, you can learn to.</strong></p>
+
+<!--
+(its that anything is possible and fun with the right company, guidance and the will to push a bit more than last time)
+    
+After all, if persistence and pain can conquer PIDs, it can conquer anything (Not a very good conclusion, maybe revise?)
+    
+(After all, if two First Year students can simulate a flying vehicle without burning their PCs or their brains then atleast you can do the latter)    
+
+(After all, if the two of us can prioratize all our time in tuning three knobs for a week straight then you have no excuse.)<Can be phrased better> 
+-->
+
+<p>After all, if two First Years with nothing more than some time and a lot of persistence can conquer PIDs and design a drone, you can do whatever you put your mind to too. 😊</p>
+
+<h2 id="links-and-further-reading">Links and Further Reading</h2>
+<ul>
+  <li>If we managed to hold your interest for this long, then try taking a look at our project <a href="https://github.com/Jash-Shah/Eklavya---Drone">GitHub</a>
+</li>
+  <li>If you want to go in depth with the code and theory, take a look at our <a href="https://github.com/Jash-Shah/Eklavya---Drone/blob/main/report/Eklavya%20Report.pdf">project report</a>
+</li>
+  <li>If you’d like to learn more about PIDs, take a look at this wonderful <a href="https://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf">paper</a> by Tim Wescott</li>
+  <li>Check out our ever-present and helpful mentors: <a href="https://github.com/hashmis79">Saad Hashmi</a>, <a href="https://github.com/kart1802">Karthik Swaminathan</a>, <a href="https://github.com/dhruvi29">Dhruvi Doshi</a>
+</li>
+  <li>If you’d like to learn more about us and what we do check out our profiles: <a href="https://github.com/Jash-Shah">Jash Shah</a>, <a href="https://github.com/toshan-luktuke">Toshan Luktuke</a>
+</li>
+</ul>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          
+          <a class="btn btn-primary float-right" href="/Blogs/2022/05/28/Need-To-Blog.html" data-toggle="tooltip" data-placement="top" title="Need to Blog!">Next<span class="d-none d-md-inline">
+              Post</span> →</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:gauravcjoshi17@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/gaurav17joshi">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright © Jash Shah 2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Blogs/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/Blogs/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

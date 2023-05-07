@@ -1,187 +1,759 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/Blogs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Blogs/" rel="alternate" type="text/html" /><updated>2023-05-07T13:13:11+05:30</updated><id>http://localhost:4000/Blogs/feed.xml</id><title type="html">Gaurav Joshi Blog</title><subtitle>A Blog Theme by Start Bootstrap</subtitle><author><name>Gaurav Joshi</name></author><entry><title type="html">Man must explore, and this is exploration at its greatest</title><link href="http://localhost:4000/Blogs/2020/01/31/man-must-explore.html" rel="alternate" type="text/html" title="Man must explore, and this is exploration at its greatest" /><published>2020-01-31T20:15:13+05:30</published><updated>2020-01-31T20:15:13+05:30</updated><id>http://localhost:4000/Blogs/2020/01/31/man-must-explore</id><content type="html" xml:base="http://localhost:4000/Blogs/2020/01/31/man-must-explore.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/Blogs/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/Blogs/" rel="alternate" type="text/html" /><updated>2023-05-07T14:50:01+05:30</updated><id>http://localhost:4000/Blogs/feed.xml</id><title type="html">Blogs</title><subtitle>A small place on this vast network for me to write about my experiences with tech, people, place and life!</subtitle><author><name>Jash Shah</name></author><entry><title type="html">Finguitar</title><link href="http://localhost:4000/Blogs/2022/12/31/Finguitar-First-Hackathon-Experience.html" rel="alternate" type="text/html" title="Finguitar" /><published>2022-12-31T00:00:00+05:30</published><updated>2022-12-31T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/12/31/Finguitar:-First-Hackathon-Experience</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/12/31/Finguitar-First-Hackathon-Experience.html"><![CDATA[<p><em>My experience in participating in my very first dev-orieted hackathon and winning amongst 150+ teams with a poor implementation of a novel idea and all the learnings that came along with it.</em></p>
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<h2 id="what-are-hackathons">What are Hackathons</h2>
+<p>As suggested by the portmanteau, Hackathons involve hackers doing a marathon (never a real one of course :wink:), basically boiling down to clever programmers engaging in rapid engineering and creativity over a short period (usually 24 hours). Hackathons are the perfect battlegrounds to test out your skills or develop new ones on the go. The schedule of a hackathon usually goes something like this:</p>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<p><img src="/Blogs/img/posts/finguitar/flow.png" alt="Register(usually in teams of 2-4) -&gt; Idea Formation based on certain broad domains -&gt; Discuss the viability and intricacies of the idea with a mentor(optional) -&gt; Application (usually in the form of a web or mobile app) -&gt; Demo the idea and project in front of a jury" /></p>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+<p>Our first hackathon was <a href="https://codeodyssey.tech/">Code Odyssey</a> organized by KJSIEIT, Sion. It involved over 150 teams (of 2-4 members) and took place on Feb 12-13, 2021. This blog is about our experiences(and mistakes) in going from hackathon noobs, to somehow winning our very first hackathon(and still being noobs after that).</p>
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+<h2 id="brief-intro-about-us">Brief Intro about us</h2>
+<p>Before participating in our very first Hackathon during the tail end of our Third Semester of Computer Engineering, we were just a bunch of Second Year students, with little to no experience in competing on such a wide stage.</p>
 
-<h2 class="section-heading">The Final Frontier</h2>
+<p>We wish we had some elaborate planning involved in how we formed our team, but it was as simple as being four friends with varying interests and experiences who wanted to work together. How did we know about each other’s varying interests and skills? Well, all four of us were a part of the <a href="https://www.communityofcoders.in/events/631f4cddf8688e4aaec19d39">Inheritance Mentorship program</a> organized by the <a href="https://www.communityofcoders.in/">Community of Coders, VJTI</a>. <a href="https://github.com/Jash-Shah">Jash</a> and <a href="https://github.com/psankhe28">Pratiksha</a> from team Neo and <a href="https://github.com/saRvaGnyA">Sarvagnya</a> and <a href="https://github.com/alisha-kamat">Alisha</a> from team Star. It was through observing each other’s team throughout this program that the prospect of combining our talents interested us and thus, team NeoStar Aaghadi was formed! (don’t ask where the ‘Aaghadi’ came from)</p>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<p>Having participated in the Inheritance 2021 program by CoC, all four of us had dabbled in web dev, but we would be lying if we said we were ready to take on a 150+ team hackathon.</p>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<p>In hindsight, we probably should’ve prepared a bit before the hack, like seeking out generic templates based on potential ideas, having a tech stack decided and a default backend app ready to be deployed, etc. but it being our first hackathon and all, we went in blind and naive. So kids, <strong>do as we say NOT as we do!</strong></p>
 
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+<h2 id="idea-formation">Idea Formation</h2>
+<p>After having convinced ourselves that somehow it is a good idea for four complete beginners to participate in a 150+ team hackathon with students from the Third and Final year(some of them being our Inheritance mentors :eyes:) we had reached the night before the hackathon starts.</p>
 
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+<p>This seemingly awkward and insecure “council” session to try to come up with an idea that is <em>creative, original, has business value, positive impact, and has long-term use</em> turned out to be one of the most fun and creative parts of the hackathon. I mean, it’s you and your friends brainstorming about esoteric and niche ideas, acting like you have <strong>any of the capabilities</strong> required to create them, but <strong>believing fully</strong> that you have the next Facebook on your hands :upside_down_face:.</p>
 
-<h2 class="section-heading">Reaching for the Stars</h2>
+<p>The name of the game here is being <em>innovative, creative, and open-minded</em>. This is also the best opportunity to form healthy communication between your team, which will reap long-term benefits down the line:chart_with_upwards_trend:. While just regurgitating previously successful ideas as long as they meet the theme requirement is a viable strategy in a Hackathon, <strong>there is little learning to gain from it</strong>.</p>
 
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+<p>The idea for Finguitar came by combining two whacky ideas, one from Sarvagnya which involved a sort of a keyboard piano app where you can play different musical instruments using your keyboard, and another project which was trending at the time of a hand gesture detection web app for blind people. We combined the two to come up with - <strong><em>Finguitar - A web app that uses Computer Vision to build an online instrument that you can play using just your fingers :musical_note:!</em></strong></p>
 
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+<h2 id="work-division-communication-and-time-management">Work Division, Communication, and Time Management</h2>
+<p>The time crunch of a hack not only tests your individual coding skills but also <em>how well you can work <strong>in and as a team</strong></em>. It is not always necessary that the athletes best at a 100m sprint also excel in a 1000m relay. We quickly learned to <strong><em>divide and conquer!</em></strong></p>
 
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+<p>Following our hackathon timeline, we spent the first hour exploring the Discord server and presenting our idea to our assigned mentor. <em>Validation is the fuel for productivity</em>, and that is exactly what our mentor gave us along with a few tips on how to mold our very rough idea into a viable product :memo:.</p>
 
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+<p>Our Tech Stack involved:</p>
+<ul>
+  <li><strong>React-JS</strong> for the frontend,</li>
+  <li><strong>Flask</strong> for backend,</li>
+  <li><strong>OpenCV+TensorFlow</strong> to handle gesture detection.</li>
+</ul>
 
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name>Gaurav Joshi</name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry><entry><title type="html">I believe every human has a finite number of heartbeats. I don’t intend to waste any of mine.</title><link href="http://localhost:4000/Blogs/2020/01/31/heartbeats.html" rel="alternate" type="text/html" title="I believe every human has a finite number of heartbeats. I don’t intend to waste any of mine." /><published>2020-01-31T09:15:13+05:30</published><updated>2020-01-31T09:15:13+05:30</updated><id>http://localhost:4000/Blogs/2020/01/31/heartbeats</id><content type="html" xml:base="http://localhost:4000/Blogs/2020/01/31/heartbeats.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<p>We segmented our efforts based on domains. Working with web development was comfortable for Sarvagnya and Pratiksha, so they handled the ReactJS part. Jash felt “confident” with the backend involving Flask and the ML model. Alisha worked on the acoustics as we were “supposed to” construct an entire instrument.</p>
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<p>After dividing the work, we all went into our separate work hibernation pods, while still being online on discord to be able to hop into a call whenever required.</p>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<h2 id="the-thrill-of-learning-on-the-fly">The Thrill of Learning on the Fly</h2>
+<p><em>“I am a person who works well under pressure. In fact, I work so well under pressure that at times, I will procrastinate in order to create this pressure.”</em></p>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+<p>All professional procrastinators(engineers) are more than privy to those last-day study sessions before exams, where we make up for all the bunked lectures and ignored chapters of the portion. How are we able to do it? How are we able to learn a topic that has been escaping us for an entire semester in just a few hours? <strong>“The pressure of the deadline”</strong> is the answer.</p>
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+<p>It’s this exact pressure cooker environment that is created and motivated during a hackathon. It enabled us to not only learn things on the fly but apply them to the project at hand as well!</p>
 
-<h2 class="section-heading">The Final Frontier</h2>
+<p>While there were a lot of “fun and interesting:sweat_smile:” obstacles we faced, integrating the gesture recognition model with the web interface was the sore thumb. We had to spend around two to three hours just to learn an entirely new protocol called <a href="https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API">WebSocket</a> and then apply it in both ReactJS and Flask to be able to - Take a frame in the browser, emit it on a websocket, detect a gesture, and then relay that gesture back to the websocket.</p>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<p>Despite having taken out a big chunk of our time because of some over-complications made in dealing with the <a href="https://en.wikipedia.org/wiki/Base64">Base64</a> encoding of the frames on the backend by Jash, it taught Jash and Sarvagnya some valuable debugging skills while also bettering our communication along the way.</p>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<h2 id="final-hours-and-project-demo">Final hours and Project Demo</h2>
 
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
+<p>The frontend from Pratiksha, the gesture detection API from Jash, and the acoustics from Alisha all needed to be integrated by Sarvagnya the night before our first round of evaluations with the mentor in the morning:alarm_clock:.</p>
 
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
+<p><em>Only when all the ingredients are correctly incorporated into a pizza is it delicious.</em> A browser had to be used to reproduce the challenge of creating an appropriate instrument experience. Beyond connecting the parts and tuning the user experience for three hours after midnight, we produced a cute little prototype. At about three in the morning, Sarvagnya excitedly submitted a demo video of this to the team members. Jash (supposedly awake of the mess he feared Sarvagnya would make) saw the video and approved it.</p>
 
-<h2 class="section-heading">Reaching for the Stars</h2>
+<p>The mentor evaluations the next morning went smoothly with us nailing the demo. We got qualified for the top 10 :tada:.</p>
 
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
+<h2 id="final-pitch">Final Pitch</h2>
+<p>This is the <strong>make-it-or-break-it moment</strong>. No matter how much of your original vision you were able to achieve (or not achieve in our case), you have to believe in your idea 100% and sell it as so. At the end of the day, most dev-oriented hackathons are incubators of new ideas than a test for your technical skills. As long as the latest version of your project is <em>not broken enough</em> to be used as a proof of concept, you need to pitch every feature you’ve added and can potentially scale as part of your demo.</p>
 
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
+<p>We had never previously presented our concept before. We were unsure of what to do. Our prepared slides and demo were both overly technical.</p>
 
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
+<p>We got the opportunity to witness the other teams’ demos as ours was in the 7th slot. The judges, who were big shots from successful tech startups, made their expectations abundantly clear based on their <strong><em>lack of interest in the technical details of the idea but more so in its business acumen</em></strong>. Even our Inheritance mentor Ravi’s team wasn’t spared when their entire presentation spiraled into a gabby discussion regarding the use of blockchain and web3 in their proposal(they did eventually manage to win a sponsor track prize in the hackathon). We also realized that our project was way less technically impressive than others who not only had a fully featured web-app but a mobile-app to boot.</p>
 
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+<p>It was finally our turn, we readied our slides, and Alisha started with the pitch. The judges seemed intrigued by the idea, but the interest died down as Jash started explaining the backend. Suddenly, <em>one of the judges turns on their mic and asks us to skip all the technical slides</em>!? That meant <strong>skipping 10 of the 16 slides</strong> we had made:grimacing:.</p>
 
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name>Gaurav Joshi</name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry><entry><title type="html">Science has not yet mastered prophecy</title><link href="http://localhost:4000/Blogs/2020/01/30/prophecy.html" rel="alternate" type="text/html" title="Science has not yet mastered prophecy" /><published>2020-01-30T09:15:13+05:30</published><updated>2020-01-30T09:15:13+05:30</updated><id>http://localhost:4000/Blogs/2020/01/30/prophecy</id><content type="html" xml:base="http://localhost:4000/Blogs/2020/01/30/prophecy.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
+<p>So with only 2 slides left, and a yawning judge panel, we basically started improvising a pitch. Talking about how we had built a new &amp; first of its kind online instrument, its viablity in malls as a demo for real instruments, its impact on education when used as a learning aid in schools, etc. Instantly, the panel became active and interested. They even started brainstorming ideas with us!! Primarily stressing the commercial viability and gamification of our idea managed to impress the judges.</p>
 
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rfgN-wgJye8?start=8059" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
+<h2 id="results">Results</h2>
 
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
+<p>We’ll be truthful. We did not anticipate qualifying as one of the Top 10 teams. Hell, we did not even anticipate qualifying the initial idea demo to our mentor. However, after giving our pitch and evaluating the judge’s enthusiasm against the other teams, we felt certain that we could secure at least one of the top three positions.</p>
 
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
+<p>Finally, with biting nails and bated breath we heard the results announcement, and seeing “Team NeoStar Aaghadi” written alongside 1st Place Winner sealed the deal :sparkles:</p>
 
-<h2 class="section-heading">The Final Frontier</h2>
+<p><img src="/Blogs/img/posts/finguitar/result.png" alt="Winner Slide" /></p>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
+<h2 id="conclusion">Conclusion</h2>
 
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name>Gaurav Joshi</name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry><entry><title type="html">Failure is not an option</title><link href="http://localhost:4000/Blogs/2020/01/29/exploration.html" rel="alternate" type="text/html" title="Failure is not an option" /><published>2020-01-29T09:15:13+05:30</published><updated>2020-01-29T09:15:13+05:30</updated><id>http://localhost:4000/Blogs/2020/01/29/exploration</id><content type="html" xml:base="http://localhost:4000/Blogs/2020/01/29/exploration.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-
-<h2 class="section-heading">The Final Frontier</h2>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name>Gaurav Joshi</name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry><entry><title type="html">The dreams of yesterday are the hopes of today and the reality of tomorrow.</title><link href="http://localhost:4000/Blogs/2020/01/28/dreams.html" rel="alternate" type="text/html" title="The dreams of yesterday are the hopes of today and the reality of tomorrow." /><published>2020-01-28T09:15:13+05:30</published><updated>2020-01-28T09:15:13+05:30</updated><id>http://localhost:4000/Blogs/2020/01/28/dreams</id><content type="html" xml:base="http://localhost:4000/Blogs/2020/01/28/dreams.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-
-<h2 class="section-heading">The Final Frontier</h2>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name>Gaurav Joshi</name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry><entry><title type="html">Dinosaurs are extinct today</title><link href="http://localhost:4000/Blogs/2020/01/27/dinosaurs.html" rel="alternate" type="text/html" title="Dinosaurs are extinct today" /><published>2020-01-27T09:15:13+05:30</published><updated>2020-01-27T09:15:13+05:30</updated><id>http://localhost:4000/Blogs/2020/01/27/dinosaurs</id><content type="html" xml:base="http://localhost:4000/Blogs/2020/01/27/dinosaurs.html"><![CDATA[<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-
-<h2 class="section-heading">The Final Frontier</h2>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-
-<h2 class="section-heading">Reaching for the Stars</h2>
-
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-
-<img class="img-fluid" src="https://source.unsplash.com/Mn9Fa_wQH-M/800x450" alt="Demo Image">
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-
-<p>Placeholder text by <a href="http://spaceipsum.com/">Space Ipsum</a>. Photographs by <a href="https://unsplash.com/">Unsplash</a>.</p>]]></content><author><name>Gaurav Joshi</name></author><summary type="html"><![CDATA[Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.]]></summary></entry></feed>
+<p>In conclusion, if a bunch of newbie Second Year hacksters can somehow manage to fool a distinguished judge panel into selecting their under-developed novel idea above 150+ other teams, then there is no reason for anyone to not try their hand at a hackathon!</p>
+
+<h2 id="references">References</h2>
+<ul>
+  <li>Team Members:
+    <ul>
+      <li><u><a href="https://github.com/Jash-Shah">Jash Shah</a></u></li>
+      <li><u><a href="https://github.com/saRvaGnyA">Sarvagnya Purohit</a></u></li>
+      <li><u><a href="https://github.com/psankhe28">Pratiksha Sankhe</a></u></li>
+      <li><u><a href="https://github.com/alisha-kamat">Alisha Kamat</a></u></li>
+    </ul>
+  </li>
+  <li>Our Inheritance Projects:
+    <ul>
+      <li>Team Neo: Jash and Pratiksha: <u><a href="https://github.com/Jash-Shah/Data-Map">Data-Map</a></u></li>
+      <li>Team Star: Sarvagnya and Alisha: <u><a href="https://github.com/toshan-luktuke/stock-market-analyser">Stock-market Analyzer</a></u></li>
+    </ul>
+  </li>
+  <li><u><a href="https://codeodyssey.tech/">Code Odyssey Hackathon</a></u></li>
+  <li><u><a href="https://github.com/Jash-Shah/Finguitar">Finguitar</a></u></li>
+</ul>]]></content><author><name>Jash Shah</name></author><category term="hackathon" /><summary type="html"><![CDATA[My experience in participating in my very first dev-orieted hackathon and winning amongst 150+ teams with a poor implementation of a novel idea and all the learnings that came along with it.]]></summary></entry><entry><title type="html">My GSoC Journey - Part 5</title><link href="http://localhost:4000/Blogs/2022/07/20/Final-GSoC-Submission.html" rel="alternate" type="text/html" title="My GSoC Journey - Part 5" /><published>2022-07-20T00:00:00+05:30</published><updated>2022-07-20T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/07/20/Final-GSoC-Submission</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/07/20/Final-GSoC-Submission.html"><![CDATA[<p><em>After an adventurous journey throughout these five months, starting with knowing very little about GNU, Python packaging, Docker, Build systems and CI/CD to having a Python package on PyPI, this is a final summary of all my work throughout GSoC 2022!</em></p>
+
+<h2 id="about-pygnuastro">About pyGnuastro</h2>
+
+<h3 id="links">Links</h3>
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">Topic<br /></th>
+    <th class="tg-0pky">Links</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky">GitHub</td>
+    <td class="tg-0pky"><a href="https://github.com/Jash-Shah/pyGnuastro"><span style="color:#905">https://github.com/Jash-Shah/pyGnuastro</span></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">PyPI</td>
+    <td class="tg-0pky"><a href="https://test.pypi.org/project/pygnuastro/"><span style="color:#905">https://test.pypi.org/project/pygnuastro/</span></a></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Documentation</td>
+    <td class="tg-0pky">&lt;ADD LINK TO DOCS&gt;</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Docker Images</td>
+    <td class="tg-0pky"><a href="https://hub.docker.com/repository/registry-1.docker.io/jashshah1401/pygnuastro/tags?page=1&amp;ordering=last_updated"><span style="color:#905">https://hub.docker.com/repository/registry-1.docker.io/jashshah1401/pygnuastro/tags?page=1&amp;ordering=last_updated</span></a></td>
+  </tr>
+</tbody>
+</table>
+<p><br /></p>
+
+<h3 id="description">Description</h3>
+<p>The pyGnuastro python package is a free software which aims to offer a wide array of functions
+for astronomical data manipulation and analysis. It is the Python 
+implementation of <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/gnuastro.html">GNU Astronomy Utilities</a>
+and aims to offer all the functionality of Gnuastro
+but with a higher level of abstracion.</p>
+
+<h3 id="need">Need</h3>
+<p>While <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Gnuastro-library.html">Gnuastro’s Library</a>
+and its <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/General-program-usage-tutorial.html">Binary programs</a>
+provides extensive and fine-tuned functionality,
+it’s tough to deny the versitality and ease of usage that a language like
+Python brings. Being dynamically typed and high-level makes
+it simple for novice programmers to interact with Gnuastro’s programs.
+Additionally, since many of Gnuastro’s use cases require working with data
+arrays, integrating libraries like <a href="https://numpy.org/doc/stable/index.html">NumPy</a>
+makes data analysis and manipulation more accessible.</p>
+
+<h2 id="work-done-throughout-gsoc">Work done throughout GSoC</h2>
+
+<ol>
+  <li>
+    <p>Learned about <a href="https://docs.python.org/3/extending/extending.html">Python Extensions</a>, <a href="py.org/doc/stable/reference/c-api/index.html">NumPy C-API</a>, <a href="https://setuptools.pypa.io/en/latest/userguide/ext_modules.html">setuptools</a>, <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Library.html">Gnuastro library</a> and tried out some <a href="https://github.com/Jash-Shah/python-extension-practice">examples</a> of the same.</p>
+  </li>
+  <li>
+    <p>Learned about the GNU Build system, mainly <a href="https://www.gnu.org/software/autoconf/">Autoconf</a> and <a href="https://www.gnu.org/software/automake/">Automake</a>.</p>
+  </li>
+  <li>
+    <p>Started by trying to package the python modules with the Gnuastro itself. The first module tried was <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Cosmology-library.html"><code class="language-plaintext highlighter-rouge">cosmology</code></a> since it doesn’t have any external dependencies and only a few basic functions. <a href="https://github.com/Jash-Shah/gnuastro-jash/commit/6997730fab6cb18fd7b34f77f9a0f65f0c7e0730">Commit</a>.</p>
+  </li>
+  <li>
+    <p>However, after discussing with my Mentor we came to the conclusion that trying to combine Python and GNU build systems wasn’t the best approach. So we decided to make a separate Python package called <code class="language-plaintext highlighter-rouge">pyGnuastro</code> which would be distributed as its own separate Python package and be available on PyPI!</p>
+  </li>
+  <li>
+    <p>Added a <a href="https://github.com/Jash-Shah/gnuastro-jash/commit/ed301e20c831a276da77dd1b8f138695f672359e">Python Interface</a>(<a href="http://akhlaghi.org/gnuastro.pdf">doc (section 12.3.29 pg717) </a>) module to the Gnuastro Library to provide the utility functions that will be required by the Python wrappers.</p>
+  </li>
+  <li>
+    <p>Learned about <a href="https://realpython.com/python-wheels/">Python Wheels</a>. pyGnuastro depends on the Gnuastro library which in turn has its own <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Dependencies.html">dependencies</a>. So, in order to ensure a smooth installation experience for users, we make use of <a href="https://pypi.org/pypi/auditwheel/"><code class="language-plaintext highlighter-rouge">auditwheel</code></a>(<a href="https://pypi.org/project/delocate/"><code class="language-plaintext highlighter-rouge">delocate</code></a> for MacOS) to build <a href="https://github.com/pypa/manylinux"><code class="language-plaintext highlighter-rouge">manylinux</code> wheels</a>. These wheels include all the dependencies in the distributed package itself rather than depending on the users to install, build and link to them :smile:</p>
+  </li>
+  <li>
+    <p>Created the <a href="https://packaging.python.org/en/latest/overview/">structure of the Python package</a> with the <a href="https://github.com/Jash-Shah/pyGnuastro/blob/main/setup.py"><code class="language-plaintext highlighter-rouge">setup.py</code></a> script to build the extensions.</p>
+  </li>
+  <li>
+    <p>Built a <a href="https://hub.docker.com/repository/registry-1.docker.io/jashshah1401/pygnuastro/tags?page=1&amp;ordering=last_updated">custom docker image</a> using <a href="http://www.maneage.org"><code class="language-plaintext highlighter-rouge">maneage</code></a>. Worked with my mentor to create a build script for maneage which builds the gnuastro library statically(<a href="https://gitlab.com/makhlaghi/gnuastro-in-maneage-static">repo with reproducible instructions</a>) by taking  <code class="language-plaintext highlighter-rouge">quay.io/pypa/manylinux2014_x86_64</code> as the base image. This ensures that only <strong>one</strong> library is included in the pyGnuastro distribution. This reduces the size, increases portability and speeds up the installation of pyGnuastro :stars:</p>
+  </li>
+  <li>
+    <p>Created a <a href="https://github.com/Jash-Shah/pyGnuastro/blob/main/.github/workflows/build.yml">workflow script</a> using GitHub workflows to build wheels for <code class="language-plaintext highlighter-rouge">manylinux</code> images, MacOS and source distributions of pyGnuastro.</p>
+  </li>
+</ol>
+
+<h2 id="future-improvements">Future Improvements</h2>
+<p>pyGnuastro is still in its ideation phase. The major work of figuring out the build system, setting up the docker image and the workflow now allows for a quick process to add more funcionality. The major improvements include:</p>
+<ul>
+  <li>More concise documentation with focus on reproducibility</li>
+  <li>Add more modules, currently we only have two i.e. <code class="language-plaintext highlighter-rouge">cosmology</code> and <code class="language-plaintext highlighter-rouge">fits</code></li>
+  <li>Add support for custom data types in Python for better interfacing. For eg: All the <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Linked-lists.html">list data types in Gnuastro</a> can have their corresponding python versions</li>
+  <li>Add support for more platforms. Create a system similar to the current implementation of the <code class="language-plaintext highlighter-rouge">maneage-manylinux2014_x86_64</code> docker for other manylinux images as well</li>
+  <li>Add integration with other packages like OpenCV, matplotlib, scipy, etc just like NumPy.</li>
+  <li>Better infrastructure and full automated maintainence of the GitHub repo to make it the sole place for all information related to pyGnuastro</li>
+  <li>Add modules for the binary programs for Gnuastro as well just like the library functions. This can be done by either defining library functions which perform similar tasks as the binary program or implement some custom modules to replicate the behaviour of binary programs in Python</li>
+  <li>Perform efficiency comparisons with other implementations once the package reaches a mature state</li>
+</ul>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+<p>I had a great time working with everyone at Gnuastro. I would like to specially thank my mentor, <a href="https://akhlaghi.org/">Mohammad Akhlaghi</a> and my “unofficial” co-mentor <a href="https://pedramardakani.wordpress.com/">Pedram Ashofteh</a> for their continuous support and motivation. The kind of community Mohammad has created with Gnuastro still amazes me. It felt more like being a part of a team than an organization at Gnuastro because of how inclusive, supportive, and collaborative the working environment is. I was always given tasks that were quite clear. All my questions were patiently and clearly addressed, no matter how “silly” they were. There were never any hard-set deadlines imposed upon me, which allowed me to explore the domains involved in my project more freely and made for an overall better experience. I also appreciate the fact that mistakes made by me were returned with concise criticism rather than being reprimanded for them. Through the mentorship, I learned both the technicalities and the philosophies behind writing good code. Even though I’ve not been able to meet all the deliverables mentioned in my initial proposal, I plan to work with Gnuastro to finish my project and also contribute to its codebase in general.</p>]]></content><author><name>Jash Shah</name></author><category term="gsoc" /><summary type="html"><![CDATA[After an adventurous journey throughout these five months, starting with knowing very little about GNU, Python packaging, Docker, Build systems and CI/CD to having a Python package on PyPI, this is a final summary of all my work throughout GSoC 2022!]]></summary></entry><entry><title type="html">My GSoC Journey - Part 4</title><link href="http://localhost:4000/Blogs/2022/07/20/How-low-can-you-go.html" rel="alternate" type="text/html" title="My GSoC Journey - Part 4" /><published>2022-07-20T00:00:00+05:30</published><updated>2022-07-20T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/07/20/How-low-can-you-go</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/07/20/How-low-can-you-go.html"><![CDATA[<p><em>Writing the extension modules and Python wrappers for a package is one thing, but a step that is often overlooked is making a build system that complies with the rest of your program, ensures the correct installation based on your dependencies and also is portable enough to be distributable.</em></p>
+
+<p><em>I learned these things the hard way in Week 3 and 4, where I went as low level as I could to try to solve all the weird build errors and glitches I had while <strong>trying to build a Python Package using GNU Autotools</strong>.</em></p>
+
+<h2 id="building">Building</h2>
+<p>As discussed in my last GSoC blog, I was mainly using <code class="language-plaintext highlighter-rouge">distutils</code> along with it’s <code class="language-plaintext highlighter-rouge">distutils.setup</code> script to take care of all the building and linking required for building the <code class="language-plaintext highlighter-rouge">.so</code> (shared object) file required by the  Python Interpreter. However, one of my co-mentors brought up a good point that <code class="language-plaintext highlighter-rouge">setuptools</code> is the packaging tool that is recommended by <a href="https://packaging.python.org/en/latest/guides/tool-recommendations/">PyPA</a> and also using <code class="language-plaintext highlighter-rouge">wheels</code> to package the modules instead of the standard <code class="language-plaintext highlighter-rouge">setup.py build</code> command.</p>
+
+<p>Hence, <strong>Week 3 was spent mainly learning about <code class="language-plaintext highlighter-rouge">setuptools</code> and <code class="language-plaintext highlighter-rouge">wheels</code></strong>. <a href="https://realpython.com/python-wheels/#the-manylinux-wheel-tag">What Are Python Wheels and Why Should You Care?</a> is a great article to start with Python Wheels. The <a href="https://setuptools.pypa.io/en/latest/index.html">setuptools documentation</a> is a great place to know about setuptools, if you already know about distutils like me! Luckily, while <code class="language-plaintext highlighter-rouge">Setuptools</code> is a “beefier” version of distutils, as it offers better and more packaging utilities, it keeps the same functions, so in terms of code it was just a change of one line for me.</p>
+
+<p>Originally, with <code class="language-plaintext highlighter-rouge">distutils</code>, the plan was to have the files related to the Python Package in a separate <em><code class="language-plaintext highlighter-rouge">python/</code></em> directory at the root of the Gnuastro source like:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>📦python
+ ┣ 📂gnuastro.arithmetic
+ ┃ ┣ 📜arithmetic.c
+ ┃ ┗ 🔧setup.py
+ ┣ 📂gnuastro.cosmology
+ ┃ ┣ 📜cosmology.c
+ ┃ ┗ 🔧setup.py
+ ┣ 📂gnuastro.fits
+ ┃ ┣ 📜fits.c
+ ┃ ┗ 🔧setup.py
+ ┗ 📑Makefile.am
+</code></pre></div></div>
+
+<p>The idea was to have the <code class="language-plaintext highlighter-rouge">setup.py</code> script in each folder build that specific extension, and let the Makefile handle the linking. But I soon realized that this was too excessive. A better structure would be:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 📦python
+ ┣ 📂src
+ ┃ ┣ 📜arithmetic.c
+ ┃ ┣ 📜cosmology.c
+ ┃ ┗ 📜fits.c
+ ┣ 📑Makefile.am
+ ┗ 🔧setup.py
+</code></pre></div></div>
+
+<h3 id="using-autotools-to-build-python-package">Using Autotools to build Python Package</h3>
+<p>As the name suggests <strong>GNU</strong>astro is a GNU project, and thus depends on Autotools(<a href="https://www.gnu.org/software/automake/manual/html_node/index.html#SEC_Contents">Automake</a> and <a href="https://www.gnu.org/software/autoconf/">Autoconf</a> and <a href="https://www.gnu.org/software/libtool/">Libtool</a>) for its building and compiling. These are the tools behind the</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./configure
+make 
+make check
+make install
+</code></pre></div></div>
+<p>set of instructions.</p>
+
+<p>Alongwith the setup script, I also added a new file(<a href="https://github.com/Jash-Shah/gnuastro-jash/blob/6997730fab6cb18fd7b34f77f9a0f65f0c7e0730/lib/python.c"><code class="language-plaintext highlighter-rouge">python.c</code></a>) to the <em>lib/</em> directory of Gnuastro. This file basically provides any utility functions I might require while building the Python package. Currently, the file provides type conversion functions, which facilitate converting between Gnuastro and NumPy’s datatypes.</p>
+
+<p>So, what is the difference between your traditional Makefile and using Autotools instead:-</p>
+<ul>
+  <li><strong>Autoconf</strong> easily scans an existing tree to find its dependencies and creates a configure script that will run under almost any kind of shell. The configure script allows the user to control the build behavior (i.e. –with-foo, –without-python, –prefix, –sysconfdir, etc..) as well as doing checks to ensure that the system can compile the program.</li>
+</ul>
+
+<p>Configure generates a <code class="language-plaintext highlighter-rouge">config.h</code> file (from a template) which programs can include to work around portability issues. For example, if HAVE_NUMPY is not defined, don’t build the Python package.</p>
+
+<ul>
+  <li><strong>Automake</strong> provides a short template that describes what programs will be built and what objects need to be linked to build them, thus Makefiles that adhere to GNU coding standards can automatically be created.</li>
+</ul>
+
+<p>My job was to use these tools to also call the <code class="language-plaintext highlighter-rouge">setup</code> script for building my Python package.</p>
+
+<p>My approach to building the package using Autotools involved 4 basic steps:</p>
+<ol>
+  <li>Adding the necessary checks in the <code class="language-plaintext highlighter-rouge">configure.ac</code> script.
+    <ul>
+      <li>Check if a user has Python 3 on their system and get it’s include path i.e. path to <code class="language-plaintext highlighter-rouge">Python.h</code> file.</li>
+      <li>If Python 3 is found, Check if the user has NumPy on their system and get it’s include path.</li>
+      <li>Substitute the include paths as variables to be passed to all <code class="language-plaintext highlighter-rouge">Makefile.am's</code>.</li>
+    </ul>
+  </li>
+  <li>Conditionally build the Python package and its utility functions module(<code class="language-plaintext highlighter-rouge">lib/python.c</code>) only if the above checks are passed.</li>
+  <li>Write the <code class="language-plaintext highlighter-rouge">Makefile.am</code> in the <code class="language-plaintext highlighter-rouge">python/</code> directory which would handle the <em>build, install, uninstall and clean</em> targets for the Python package.</li>
+  <li>Re-write the setup.py script to make it more generic, by using the environment variables passed by the configure script instead of hardcoding the include and install paths.
+    <ul>
+      <li>This also ensures that the Python package building supports <a href="https://www.gnu.org/software/automake/manual/html_node/VPATH-Builds.html">VPATH</a> builds, which is another great feature of Autotools. For the uninitiated, <code class="language-plaintext highlighter-rouge">VPATH builds</code> are basically a way to separate your source and build tree, so that all the built files (.o, .so, etc) are in a separate directory than your source files but are symlinked to the source tree.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>This process took a lot of trial and error, digging into the Autotools(mostly Automake) documentation and playing around with the <code class="language-plaintext highlighter-rouge">Makefile.am</code> to get right. But it introduced me to these amazing tools and taught me how to make any scrawny personal project distributable!</p>
+
+<h2 id="installing">Installing</h2>
+<p>After running,</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 setup.py build_ext bdist_wheel
+</code></pre></div></div>
+<p>the distributable wheel file, with all of the package’s metadata, is created under the <code class="language-plaintext highlighter-rouge">dist/</code> folder. In order to install this file we use pip as follows:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install Gnuastro.whl
+</code></pre></div></div>
+<p>YES! It is in fact as simple as that!</p>
+
+<p>But there is an issue that I faced here, suppose that a user wants to install the Gnuastro library in their root directory, or to any directory where they dont have privileges. This means they’ll run <code class="language-plaintext highlighter-rouge">sudo make install</code> from the root of the source. This cascades to calling the Makefile in the <em>python/</em> directory with root access as well. However, running <code class="language-plaintext highlighter-rouge">pip</code> with sudo access is a big NO, NO. And <code class="language-plaintext highlighter-rouge">pip</code> would warn you of that with a warning like:</p>
+
+<p><img src="/Blogs/img/posts/gsoc-week3_4/pip_error.png" alt="PIP sudo error message" width="1000" height="50" /></p>
+
+<!-- ![PIP sudo error message](/Blogs/img/posts/gsoc-week3_4/pip_error.png) -->
+
+<p>This is because, Python packages are generally installed at a local level, in the <code class="language-plaintext highlighter-rouge">/usr/local</code> directory. However, if you call <code class="language-plaintext highlighter-rouge">pip</code> with <code class="language-plaintext highlighter-rouge">sudo</code> then it installs the packages in the root directory. To sove this, we use</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u "$SUDO_USER pip install Gnuastro,whl
+</code></pre></div></div>
+<p>which basically runs the pip command as the user who called sudo. This will ensure that your package gets installed in the local directory instead of root!</p>]]></content><author><name>Jash Shah</name></author><category term="gsoc" /><summary type="html"><![CDATA[Writing the extension modules and Python wrappers for a package is one thing, but a step that is often overlooked is making a build system that complies with the rest of your program, ensures the correct installation based on your dependencies and also is portable enough to be distributable.]]></summary></entry><entry><title type="html">My GSoC Journey - Part 3</title><link href="http://localhost:4000/Blogs/2022/07/01/Coding-Begins.html" rel="alternate" type="text/html" title="My GSoC Journey - Part 3" /><published>2022-07-01T00:00:00+05:30</published><updated>2022-07-01T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/07/01/Coding-Begins</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/07/01/Coding-Begins.html"><![CDATA[<h2 id="coding-begins">Coding Begins!</h2>
+<p>So, now that I got to know the Gnuastro community a bit and had discussed the plan of attack with my mentor it was time to start with the actual coding.</p>
+
+<h3 id="week-1">Week 1</h3>
+<p>As planned, I started with the building the extension module for <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/CosmicCalculator.html">Cosmic Calculator</a>(cosmiccal) library. A simple Python extension Module should be structed as:</p>
+
+<p><img src="/Blogs/img/posts/gsoc-coding-begins/code-block-1.png" alt="Code-Block1" /></p>
+
+<p>The cosmical library was chosen as a starting point because it contained only 6 functions and solely dealt with <em>doubles, ints, and floats</em>. Consequently, there wasn’t yet a requirement for a NumPy Converter. It was pretty straight forward to create wrappers for these functions by following the aforementioned structure. The <code class="language-plaintext highlighter-rouge">setup.py</code> script for building and installing these modules was created at the following stage. For this, I followed the <a href="https://docs.python.org/3/extending/building.html#building">Python Extension documentation’s</a> advice and utilised <a href="https://docs.python.org/3/distutils/apiref.html"><code class="language-plaintext highlighter-rouge">distutils</code></a>, which offers two crucial functions:</p>
+<ul>
+  <li><a href="https://docs.python.org/3/distutils/apiref.html#distutils.core.Extension"><u>distutils.core.Extension</u></a> which is used to describe a <code class="language-plaintext highlighter-rouge">C/C++</code> extension.</li>
+  <li><a href="https://docs.python.org/3/distutils/apiref.html#distutils.core.setup"><u>distutils.core.setup</u></a> the frontman in actually building and compiling the modules.</li>
+</ul>
+
+<p><img src="/Blogs/img/posts/gsoc-coding-begins/code-block-2.png" alt="Code-Block2" /></p>
+
+<p>After this, the commands to build and install these modules were simply:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 setup.py build
+python3 setup.py <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="week-2">Week 2</h3>
+<p>At our subsequent meeting, my mentor confirmed my work, and we both agreed that the next step should be to write the NumPy converter so that this may be <em>expanded</em> to include the other library modules as well.</p>
+
+<p>Week 2 was a little light on work because I was out of town for a few days. However, the most of my reading time was devoted to learning about the <code class="language-plaintext highlighter-rouge">NumPy C-API</code> and how it connected with the <code class="language-plaintext highlighter-rouge">Python C-API</code>.</p>
+
+<p>I discovered that a NumPy array’s primary container object was the <a href="https://numpy.org/doc/stable/reference/c-api/types-and-structures.html#c.PyArrayObject"><code class="language-plaintext highlighter-rouge">PyArrayObject</code></a>, and its <code class="language-plaintext highlighter-rouge">PyTypeObject</code> was the <a href="https://numpy.org/doc/stable/reference/c-api/types-and-structures.html#c.PyArray_Type"><code class="language-plaintext highlighter-rouge">PyArray_Type</code></a>. Therefore, in order for any <code class="language-plaintext highlighter-rouge">PyObject</code> to be regarded as a NumPy Array, it has to fulfil these two requirements.</p>
+
+<p>The API itself offered <a href="https://numpy.org/doc/stable/reference/c-api/array.html#creating-arrays">functions</a> that allowed any generic array type data container to be converted into <code class="language-plaintext highlighter-rouge">PyArray_Type</code> or one of its subclasses. For creating the converter, I would always turn to these!</p>]]></content><author><name>Jash Shah</name></author><category term="gsoc" /><summary type="html"><![CDATA[Coding Begins! So, now that I got to know the Gnuastro community a bit and had discussed the plan of attack with my mentor it was time to start with the actual coding.]]></summary></entry><entry><title type="html">My GSoC Journey - Part 2</title><link href="http://localhost:4000/Blogs/2022/06/26/Community-Bonding.html" rel="alternate" type="text/html" title="My GSoC Journey - Part 2" /><published>2022-06-26T00:00:00+05:30</published><updated>2022-06-26T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/06/26/Community-Bonding</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/06/26/Community-Bonding.html"><![CDATA[<h2 id="community-bonding-period">Community Bonding Period</h2>
+<p>The official <a href="https://google.github.io/gsocguides/student/how-gsoc-works">GSoC docs</a> describes the Community Bonding Period as <em><code class="language-plaintext highlighter-rouge">"The first phase in which you get to know your community and get familiar with their code base and work style."</code></em> So following this definition, my main goal in these few weeks(<strong>20th May - 13th June</strong>) was to get to learn the inner workings of Gnuastro and trying to understand the communication within it, by becoming an active part of the community.</p>
+
+<h3 id="week-1">Week 1</h3>
+<p>As I had my end semester exams scheduled from 9th May till 27th May, it was tough for me to be as active as I would like, so this week was majorly spent <strong>observing the communication between the different memebers of the community</strong>, mainly through our <a href="https://matrix.to/#/#gnuastro:openastronomy.org">Element(Matrix) Channel</a>. I would also browse through the <a href="https://savannah.gnu.org/bugs/?group=gnuastro">Savannah pages</a> of Gnuastro to see the current bugs/features in work, while also noting the contributions currenty being made, by reading through the great commit messages.</p>
+
+<h3 id="week-23---the-first-meet-with-mentor-">Week 2/3 - The First Meet with Mentor !!</h3>
+<p>I dedicated myself to learning about <a href="https://docs.python.org/3/extending/extending.html#compilation-and-linkage">Python Extensions</a>(whose docs are really succinct!) and testing them out by creating some sample modules during this period. It was quite inciteful as it gave me a greater perspective into what the final outcome of my project will be and what flow of work I would have to follow to achieve that.
+<br /><br />
+I was also pretty excited about finally getting to meet my mentor, <a href="https://akhlaghi.org/">Mohammad Akhlaghi</a>, who I had only talked to over the mail and IRC, but had been incredibly kind and welcoming. Taking the schedules of all other developers into cosideration as well, we decided to make <strong><code class="language-plaintext highlighter-rouge">Tuesdays 1:00PM,CEST(4:30PM IST) as our weekly meet times</code></strong>. The first meet went great, and was really fun(allbeit overwhelming) to meet all the other developers and get an insight into the awesome work everyone’s doing at Gnuastro! I presented a few slides I had prepared to give an overview of my project to the the other developers. Alongwith Mohammad, we were also able to decide a few goals for the next meet, them being:</p>
+<ul>
+  <li>Learn more about <strong><code class="language-plaintext highlighter-rouge">Python Extension Modules</code></strong> and try to extend a simple Gnuastro Library module(<a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/CosmicCalculator.html"><u>cosmiccal</u></a> in particular) into Python.</li>
+  <li>Reasearch into the <a href="https://numpy.org/doc/stable/reference/c-api/index.html"><u>NumPy C-API</u></a> and how we can go about building a converter between <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Generic-data-container.html"><u>Gnuastro's core data-structure</u></a> and NumPy’s <a href="https://numpy.org/doc/stable/reference/c-api/types-and-structures.html#c.PyArray_Type"><u>PyArrayObject</u></a>.</li>
+</ul>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>As mentioned in the afformentioned definition of <em>Community Bonding</em> given by GSoC, I think I managed to get a good insight into the Gnuastro’s community by <strong>observing their communications and contributions</strong> while also making myself familiar with their work style!</p>]]></content><author><name>Jash Shah</name></author><category term="gsoc" /><summary type="html"><![CDATA[Community Bonding Period The official GSoC docs describes the Community Bonding Period as "The first phase in which you get to know your community and get familiar with their code base and work style." So following this definition, my main goal in these few weeks(20th May - 13th June) was to get to learn the inner workings of Gnuastro and trying to understand the communication within it, by becoming an active part of the community.]]></summary></entry><entry><title type="html">My GSoC Journey - Part 1</title><link href="http://localhost:4000/Blogs/2022/05/29/GSoC-What_Why_How.html" rel="alternate" type="text/html" title="My GSoC Journey - Part 1" /><published>2022-05-29T00:00:00+05:30</published><updated>2022-05-29T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/05/29/GSoC-What_Why_How</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/05/29/GSoC-What_Why_How.html"><![CDATA[<h2 id="what-is-google-summer-of-code-gsoc">What Is Google Summer of Code (GSoC)</h2>
+<p><code class="language-plaintext highlighter-rouge">Google Summer of Code</code>(shortly known as GSoC) is a global, online program(organized by…..you guessed it! Google) focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors. You can think of GSoC as an incubator for nurturing future open source developers.</p>
+
+<h3 id="why-is-open-source-important">Why is Open Source important?</h3>
+<p>Open source software is code that is designed to be publicly accessible—<strong>anyone can see, modify, and distribute the code</strong> as they see fit. This makes it ideal for developers who want to contribute towards making a <em>small but significant change</em> in the world of softwares, but might lack the credentials, time, resources or just plain will to go through the grueling process of first getting employed by a software firm. Open source organiztions, are genrally helmed by engineers, who are <em>extremely practical</em>(even to a fault sometimes ;) ). Thus, Open Source slices through all the social constructs and procedural beuracracy invovled in getting a job in a software firm, by giving anyone with an idea and the will+ability to bring that idea to fruition, a chance to contribute to these softwares, thus working towards making it a better software for everyone.
+<img src="https://images-cdn.9gag.com/photo/aM4jpy6_700b.jpg" alt="Matrix Open Source Software Meme" /></p>
+
+<h2 id="why-did-i-participate-in-gsoc">Why did I participate in GSoC?</h2>
+<p>Well…there a bunch of reasons for this:</p>
+<ul>
+  <li>It seemed like <code class="language-plaintext highlighter-rouge">the natural next step</code> in my journey as a Computer Engineer. I have just finished my IV Semester, got a few good projects under my belt, taken part(&amp; won) in a few competitions, ad GSoC feels like the right way to now start getting into the world of free software!</li>
+  <li><code class="language-plaintext highlighter-rouge">Peer Pressure 🙃 : The Good Kind</code><br />
+My college (<a href="https://vjti.ac.in/">VJTI, Matunga</a>) had a staggering <strong>24 GSoC’ers in 2022</strong>. 21 of these were from <a href="https://github.com/SRA-VJTI">SRA(Society of Robotics and Automation)</a> a club that I’ve been a very active part of. Hence, being surrounded by people who were also working towards getting accepted in GSoC definetly helped me in doing the same.</li>
+  <li>I felt the <code class="language-plaintext highlighter-rouge">need(nay obligation) to contribute to the open source softwares that had helped ME</code> in my few budding years of being a Computer Engineer. When you get to use and interact with the communities of something as good as Linux, OpenCV, ROS, VLC, React for free; you will feel the same way, trust me ;)</li>
+  <li>The prospect of <code class="language-plaintext highlighter-rouge">being mentored</code> by someone, <em>much much more</em> proficient than me at such an early stage, while also getting paid to do so !!</li>
+  <li><code class="language-plaintext highlighter-rouge">College Work just doesn't seem enough</code><br />
+This might be exclusive to just me, but I was not satisfied with the challenge offered by the assignments and projects in my college curriculum. Hence, GSoC also fills that gap of trying out something outside of the normal confines of my college,</li>
+</ul>
+
+<h2 id="how-to-start-with-gsoc">How to start with GSoC?</h2>
+
+<ol>
+  <li>
+    <p><strong>Find an Organization:</strong><br />
+ According to the <a href="https://developers.google.com/open-source/gsoc/timeline">timeline of GSoC 22’</a>, the organizations were announced on <em>7th March, 2022</em>. However, there are a few legacy organiztions (like CERN-HSF, Red Hat, OpenCV, Julia, etc.) that have been participating in GSoC for long, hence aiming for one of these orgs(if you like them!) and starting even as early as Januaray (i.e ~4 months before the application period) is a good idea. It will also give you time to browse various orgs and settle into their communities. Although because of some other commitments, I was not able to start properly working on GSoC till April (i.e. a month before the application period :0 ). So, <em>don’t do as I do but do as I say</em>.<br />
+ The org which I chose was <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/gnuastro.html">Gnuastro</a> which is part of the umbrella org <a href="https://openastronomy.org/">openastronomy</a></p>
+  </li>
+  <li>
+    <p><strong>Finding a Project:</strong><br />
+Every org participating in GSoC will have an ideas page with many prospect ideas, also some unfinished ideas(or ideas requiring enhancement) from previous GSoC’s. I combed through the <a href="https://openastronomy.org/gsoc/gsoc2022/#/projects">ideas page of openastronomy</a> and found a project that piqued my interest called <a href="https://openastronomy.org/gsoc/gsoc2022/#/projects?project=gnuastro_library_in_python">GNUAstro Library in Python</a>.</p>
+  </li>
+  <li>
+    <p><strong>Finding my Mentor:</strong><br />
+I followed the links to the Element(Matrix) channel of my org, where I introduced myself and was greeted warmly by my mentor with help regarding the <a href="https://savannah.gnu.org/support/index.php?110613#comment0">GSoC Checklist</a> that Gnuastro had. This step might be different for different orgs. Some may have you commit some code my creating a Pull Request(PR), some have you solve tasks, some may have no <em>necessary</em> criteria except for a proposal. The aspect common to all orgs/mentors is <code class="language-plaintext highlighter-rouge">showing your enthusiasm for the project, and to learn</code>. Also <strong>having a few(or even one in my case) commits to the org before submitting the proposal</strong> will go a long way!</p>
+  </li>
+  <li>
+    <p><strong>Making the right proposal</strong><br />
+The proposal submission deadline in GSoC 22’ was <strong>19th April</strong>. So I had less than a month post joining my org to submit a proposal. To be frank, this was a tough and hectic period(amplified more by all my friends also being in the same state). This is where the helpfulness of my mentor and the push from my college seniors really pushed me. I built my proposal by first carefully studying previous year proposals, while these are not publicly available (and some GSoCers even refuse to share them), there are many great resources maintained by GSoCers to help the new aspirants. I used the <a href="https://github.com/Google-Summer-of-Code-Archive/gsoc-proposals-archive">Proposal Archive</a> to study different proposals, for varied orgs, theor structure, content, concisivness and balance between technical and theoretical language.</p>
+  </li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+<p>Luckily, I must’ve done something right, as I did get selected for Gnuastro(openastronomy) in GSoC. And will now be spending my summer(12 weeks) contributing to the same under the guidance of my mentor!</p>]]></content><author><name>Jash Shah</name></author><category term="gsoc" /><summary type="html"><![CDATA[What Is Google Summer of Code (GSoC) Google Summer of Code(shortly known as GSoC) is a global, online program(organized by…..you guessed it! Google) focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors. You can think of GSoC as an incubator for nurturing future open source developers.]]></summary></entry><entry><title type="html">Need to Blog!</title><link href="http://localhost:4000/Blogs/2022/05/28/Need-To-Blog.html" rel="alternate" type="text/html" title="Need to Blog!" /><published>2022-05-28T00:00:00+05:30</published><updated>2022-05-28T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2022/05/28/Need-To-Blog</id><content type="html" xml:base="http://localhost:4000/Blogs/2022/05/28/Need-To-Blog.html"><![CDATA[<h1 id="intro">Intro</h1>
+<p>I’ve always felt like the need to blog, but never got around to it. Maybe I thought I didnt have the right material <em>juuust yet</em>. I was waiting for something “<em>cool</em> or <em>exciting</em>” to happen, but as I grew out of my teens, I’ve come to realize that <mark>Life just by it's nature is cool!</mark>. So, I’ve decided to start blogging my experiences, however “<em>boring</em>” or <code class="language-plaintext highlighter-rouge">insignificant in the grand scheme of things</code> they might seem, because this is LIFE, in all it’s unescapable but beautiful glory! and <br /><br />
+<em><code class="language-plaintext highlighter-rouge">Life is a just series of boring events leading up to something cool and memorable =)</code></em></p>
+
+<p><img src="https://qph.cf2.quoracdn.net/main-qimg-d592e4563eab90300d77395e84aeb9f5-pjlq" alt="Bojack Horesman Nihilism Meme ;-;" /></p>]]></content><author><name>Jash Shah</name></author><summary type="html"><![CDATA[Intro I’ve always felt like the need to blog, but never got around to it. Maybe I thought I didnt have the right material juuust yet. I was waiting for something “cool or exciting” to happen, but as I grew out of my teens, I’ve come to realize that Life just by it's nature is cool!. So, I’ve decided to start blogging my experiences, however “boring” or insignificant in the grand scheme of things they might seem, because this is LIFE, in all it’s unescapable but beautiful glory! and Life is a just series of boring events leading up to something cool and memorable =)]]></summary></entry><entry><title type="html">Persistence and PIDs</title><link href="http://localhost:4000/Blogs/2021/11/24/Eklavya.html" rel="alternate" type="text/html" title="Persistence and PIDs" /><published>2021-11-24T00:00:00+05:30</published><updated>2021-11-24T00:00:00+05:30</updated><id>http://localhost:4000/Blogs/2021/11/24/Eklavya</id><content type="html" xml:base="http://localhost:4000/Blogs/2021/11/24/Eklavya.html"><![CDATA[<h1 id="persistence-and-pids-our-journey-in-drone-design">Persistence and PIDs: Our Journey in Drone Design</h1>
+
+<p>Strange title isn’t it? It manages to sum up our experience with this project quite well though. For the Eklavya Mentorship program, my teammate and I undertook the task of building a drone from scratch and designing it’s control system.</p>
+
+<p>Quite an intimidating task for the both of us, given that we were complete beginners in almost all areas of robotics. Thankfully we had the guidance of some great mentors and an amazing community thanks to our college club: <a href="https://sravjti.in/">SRA</a>.</p>
+
+<blockquote>
+  <p>Q: So how does one go about building a drone?</p>
+</blockquote>
+
+<blockquote>
+  <p>A: You design it first :pencil:</p>
+</blockquote>
+
+<h2 id="search-design-develop">Search, Design, Develop</h2>
+
+<p>We started out at the same place everyone does when they need to do something but don’t know how to: <strong>YouTube</strong></p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/search-results.png" alt="youtube search results" /></p>
+
+<p>Incidentally we went for the <strong>fourth video</strong> in this list, mainly because it looked cool</p>
+
+<p>Then came the fun but arduous task of actually making the Drone in SolidWorks. It involved three steps:</p>
+
+<ol>
+  <li>Making each individual part and saving it as a SolidWorks part file (.sldprt).</li>
+  <li>Adding all the parts in an Assembly file and liniking them together using different joints (but mostly prismatic) to create the drone assembly file.</li>
+  <li>Then came the most crucial part, making the drone look sleek &amp; sexy (actually not that important).</li>
+</ol>
+
+<blockquote>
+  <p>Tip : Pick a nice 2 hr long album, couple of cups of Mocha and designing in SolidWorks turns into a meditative act. :coffee:</p>
+</blockquote>
+
+<p>After quite a few hours in Solidworks, our finished model was ready.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone1.jpg" alt="Original Drone 1" /></p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone2.jpg" alt="Original Drone 2" /></p>
+
+<p>Now, to actually be able to simulate this model and control it via ROS we needed to convert our SolidWorks assembly into a URDF (<a href="https://wiki.ros.org/urdf">Universal Robot Description Format</a>). Fortunately, some kind-hearted soul had thought of adding an extension in SolidWorks where-by we could natively export our assembly into an URDF (God Bless the resourcefulness of programmers!).</p>
+
+<h2 id="softwares-and-simulators">Softwares and Simulators</h2>
+
+<p>This step involves us trying to build our Drone a playground to experiment in. It uses two softwares which are going to be critical going forward :</p>
+
+<h3 id="1-ros-robot-operating-system">1. ROS (Robot Operating System)</h3>
+
+<p><a href="https://ros.org/">ROS</a> is an open-source, meta-operating system for your robot. Basically ROS enables us to control our Drone (and its specific parts) using Python/C++ code. ROS communication implements data transmission between <strong>Nodes</strong> using <strong>Topics</strong>.</p>
+
+<h4 id="ros-node">ROS Node</h4>
+
+<p>All processes in ROS run in a Node. For eg: In our Drone each Wing Link (the joint between the wing and the base), the camera, IMU sensors are all nodes. The python script we write itself creates many nodes.</p>
+
+<h4 id="ros-topics">ROS Topics</h4>
+
+<p>Topics are the <em>named</em> channels over which the nodes exchange messages. Topics can be either:
+<strong>subscribed to</strong> - For sending data through the topic.
+<strong>published to</strong> - For recieving data from the topic.</p>
+
+<p>So, suppose we want to change the speed of wing link 1 of our Drone from 10 to 100 using a python script. Then to implement it in ROS, it would look as follows:</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Node-Diag.jpg" alt="Python Script creates Node---(pubs to pwm topic)----------------------------------(subs to pwm topic)----&gt; Wing Link Node" /></p>
+
+<h3 id="2-gazebo">2. Gazebo</h3>
+
+<p>Gazebo is ROS’ native simulation software which entirely is a Node in itself! (props to ROS devs for sticking to their guns with their comms sytem). It can open our URDF file in a simulated world.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone_gazebo1.jpeg" alt="First model in gazebo" /></p>
+
+<p>However this “lo and behold!” moment turned sour pretty quick when we saw that none of the textures in our mesh files got registered. After banging our heads for sometime we finally found a solution which involved using Blender (of all things) to “re-texturize” our model and then export the meshes as .stl files.</p>
+
+<h2 id="a-world-to-fly-in">A World to Fly In</h2>
+
+<p>World building is a fancy way of making our drone respond to the numerous physical phenomena in the simulated world as it would in the real world (yes, that still exists). This means giving it propulsion so that upon the wings spinning, enough thrust would be generated to make the drone rise in the sky like a pheonix! Also attaching various sensors like:</p>
+
+<ol>
+  <li>GPS - For getting position and velocity.</li>
+  <li>IMU - For getting orientation.</li>
+  <li>Camera - For visualizing its surroundings.</li>
+</ol>
+
+<p>We had planned to just use some pre-built propulsion and sensor plugins and add them to our URDF and move on to the next part but <em>Ohhh no no</em>; The ROS Gods had some other plans in mind. The plugins seemed damn near incompatible with our model! Anytime we would try to run the simulation the drone would just twitch and sway like it was <em>overly attached</em> to the ground.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Og_Drone_gazebo2.gif" alt="First Model in Gazebo" /></p>
+
+<p>Turns out the problem was with the wing joints not being registered as revolute. However, even though we got a <strong><em>somewhat</em></strong> what more stable system after fixing that, the drone would still not lift. There were many painful days spent scouring all sorts of forums, drearily trying to sniff out even a <strong><em>whiff</em></strong> of a solution.
+Finally we did what most programmers do when they can’t find a solution to a problem….we just took someone else’s model and abandoned ours. And trying to stick to our <em>high standards</em> this someone else was none other than IIT Bombay (specifically the model they provided for their <a href="https://new.e-yantra.org/eyrc">E-Yantra 2020</a> competition).</p>
+
+<p>And Finally! after about two weeks (which felt like a month) of debugging we had a flying drone!</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/drone_start.png" alt="ERYC Model" /></p>
+
+<p>And thus with our model and world set up, we were ready to move onto building the control system.</p>
+
+<h2 id="take-control-of-your-system">Take Control of your System</h2>
+<p>No matter how complex the control theory is, at the end of the day what we can control about the drone are simply the motor speeds i.e. how fast the fans at the end spin.
+But to accomplish more complicated tasks with the drone (moving, stablilising etc.) we must make some <em>layers</em> that control these motors according to human inputs.
+This is the flow of the drone control system. We’ll go into the individual components going ahead but as an overview:</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/PID_Diagram.png" alt="PID Diagram" /></p>
+
+<p>The user gives input co-ordinates and a target altitude for the drone. Our goal was to get the drone to fly to the target co-ords autonomously. 
+To accomplish this we needed to know a few things:</p>
+<ol>
+  <li>Where it was <code class="language-plaintext highlighter-rouge">(duh!)</code></li>
+  <li>What its velocity was</li>
+  <li>What its orientation was</li>
+</ol>
+
+<h4 id="where-are-you-drone">Where are you Drone?</h4>
+
+<p>To get its position we had two options, since the drone was in a simulation, we could just ask gazebo to tell us where the model was. Otherwise, we could have the onboard GPS give us the latitude and longitude positions of the drone.</p>
+
+<p>Both of these approaches were nearly identical. We went with getting the X-Y co-ordinates from Gazebo since it was much more intuitive to give it input co-ords than arbitrary latitude - longitude values.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Subscriber to Model State
+</span><span class="n">rospy</span><span class="p">.</span><span class="nc">Subscriber</span><span class="p">(</span><span class="s">"/gazebo/model_states"</span><span class="p">,</span><span class="n">ModelStates</span><span class="p">,</span><span class="n">calPosition</span><span class="p">)</span>
+<span class="c1">#Callback function
+</span><span class="k">def</span> <span class="nf">calPosition</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">pose</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="nf">round</span><span class="p">(</span><span class="n">pos</span><span class="p">.</span><span class="n">pose</span><span class="p">[</span><span class="mi">1</span><span class="p">].</span><span class="n">position</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="slow-down-drone">Slow Down Drone!</h4>
+
+<p>Another important aspect was its speed, if the drone went too fast it risked destabilising itself and flipping over. Hence we had to maintain a careful control over its speed.</p>
+
+<p>We obtained the velocity values via the GPS onboard the drone.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Subscriber to gps
+</span><span class="n">vel_sub</span> <span class="o">=</span> <span class="n">message_filters</span><span class="p">.</span><span class="nc">Subscriber</span><span class="p">(</span><span class="s">"/edrone/gps_velocity"</span><span class="p">,</span> <span class="n">Vector3Stamped</span><span class="p">)</span>
+<span class="c1">#callback function isn't immediately defined as we need to pack velocity, xyz and rpy values together after getting them from the drone
+</span>
+<span class="k">def</span> <span class="nf">calVelocity</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">vel_x</span><span class="p">,</span> <span class="n">vel_y</span><span class="p">,</span> <span class="n">vel_z</span>
+    <span class="n">vel_x</span> <span class="o">=</span> <span class="n">msg</span><span class="p">.</span><span class="n">vector</span><span class="p">.</span><span class="n">x</span>
+    <span class="n">vel_y</span> <span class="o">=</span> <span class="n">msg</span><span class="p">.</span><span class="n">vector</span><span class="p">.</span><span class="n">y</span>
+    <span class="n">vel_z</span> <span class="o">=</span> <span class="n">msg</span><span class="p">.</span><span class="n">vector</span><span class="p">.</span><span class="n">z</span>
+</code></pre></div></div>
+
+<h4 id="dont-flip-out-drone">Don’t Flip Out Drone!</h4>
+
+<p>The IMU (<a href="https://en.wikipedia.org/wiki/Inertial_measurement_unit">Inertial Measurement Unit</a>) also gets us the orientation of the drone or its Roll, Pitch and Yaw. Fancy terms to describe how tilted it is with X, Y and Z axes</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Roll-Pitch-Yaw.jpg" alt="Roll, Pitch, Yaw image" /></p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#Similar to the velocity subscriber
+</span><span class="n">imu_sub</span> <span class="o">=</span> <span class="n">message_filters</span><span class="p">.</span><span class="nc">Subscriber</span><span class="p">(</span><span class="s">"/edrone/imu/data"</span><span class="p">,</span> <span class="n">Imu</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">calImu</span><span class="p">(</span><span class="n">msg</span><span class="p">):</span>
+    <span class="c1">#variables recieved from the IMU are unpacked
+</span>    <span class="n">orinetation_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">x</span><span class="p">,</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">y</span><span class="p">,</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">z</span><span class="p">,</span><span class="n">msg</span><span class="p">.</span><span class="n">orientation</span><span class="p">.</span><span class="n">w</span><span class="p">]</span>
+    <span class="k">global</span> <span class="n">roll</span><span class="p">,</span> <span class="n">pitch</span><span class="p">,</span> <span class="n">yaw</span>
+    <span class="p">(</span><span class="n">roll</span><span class="p">,</span><span class="n">pitch</span><span class="p">,</span><span class="n">yaw</span><span class="p">)</span> <span class="o">=</span> <span class="nf">euler_from_quaternion</span><span class="p">(</span><span class="n">orinetation_list</span><span class="p">)</span>
+    <span class="n">roll</span> <span class="o">=</span> <span class="n">roll</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="mf">3.14159265</span><span class="p">)</span>
+    <span class="n">pitch</span> <span class="o">=</span> <span class="n">pitch</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="mf">3.14159265</span><span class="p">)</span>
+    <span class="n">yaw</span> <span class="o">=</span> <span class="n">yaw</span> <span class="o">*</span> <span class="p">(</span><span class="mi">180</span><span class="o">/</span><span class="mf">3.14159265</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>These values always need to be in a small acceptable range, otherwise the drone will not be able to fly properly. (<em>flying</em> being sort of an important feature of a drone :joy:)</p>
+
+<blockquote>
+  <p>Q: Okay, but how does all this info really help us getting the drone to do what we want? Since at the end of the day, all we can really control are motor speeds.</p>
+</blockquote>
+
+<blockquote>
+  <p>A: This is where the <strong>motor mixing algorithm</strong> comes in</p>
+</blockquote>
+
+<h4 id="meet-thy-motors">Meet Thy Motors</h4>
+
+<p>Using advanced mathematical methods of analysis, some <em>very smart</em> people have come up with a way to control roll, pitch and yaw through just the motor speeds.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">speed</span> <span class="o">=</span> <span class="nf">prop_speed</span><span class="p">()</span> <span class="c1">#custom message type defined for the project
+# Equation for the speed of each propeller
+</span><span class="n">speed</span><span class="p">.</span><span class="n">prop1</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">-</span> <span class="n">output_yaw</span> <span class="o">+</span> <span class="n">output_pitch</span> <span class="o">-</span> <span class="n">output_roll</span><span class="p">)</span>
+
+<span class="n">speed</span><span class="p">.</span><span class="n">prop2</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">+</span> <span class="n">output_yaw</span> <span class="o">+</span> <span class="n">output_pitch</span> <span class="o">+</span> <span class="n">output_roll</span><span class="p">)</span>
+
+<span class="n">speed</span><span class="p">.</span><span class="n">prop3</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">-</span> <span class="n">output_yaw</span> <span class="o">-</span> <span class="n">output_pitch</span> <span class="o">+</span> <span class="n">output_roll</span><span class="p">)</span>
+
+<span class="n">speed</span><span class="p">.</span><span class="n">prop4</span> <span class="o">=</span> <span class="p">(</span><span class="n">thrust</span> <span class="o">+</span> <span class="n">output_yaw</span> <span class="o">-</span> <span class="n">output_pitch</span> <span class="o">-</span> <span class="n">output_roll</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>For our part, we took them at their word and stuck this as the final component of our control system.</p>
+
+<p><em>Et voilà!</em> our drone could fly and move according to our commands!</p>
+
+<p>Well…. not exactly. There’s one component that comes in between that I’ve avoided talking about so far: <strong>PIDs</strong>.</p>
+
+<h2 id="persistence-and-pids">Persistence and PIDs</h2>
+
+<p>PID stands for Proportional, Integral, Derivative. If the name sounds scary don’t be afraid, PIDs are relatively simple to implement and get running.</p>
+
+<p>All it is, is a way for the system (drone) to be able to bring itself towards a target value by correcting its error.</p>
+
+<p>In this case, PIDs operate between Roll, Pitch, Yaw, Thrust values and the Motor Mixing Algorithm. They consider the taget values, look at the current values and then decide if the motor speeds should be higher or lower to get to the target values and how high and how low these values should be.</p>
+
+<p>(PID diagram with the fancy E symbol)
+<img src="/Blogs/img/posts/eklavya-drone/pid-formuals.png" alt="PID Theory Diagram" /></p>
+
+<p>The code is relatively simple</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Code for the Altitude PID
+# Speed found from testing at which drone hovers at a fixed height
+</span><span class="n">hover_speed</span> <span class="o">=</span> <span class="mf">508.75</span>
+<span class="c1"># Altitude error
+</span><span class="n">dErr_alt</span> <span class="o">=</span> <span class="n">current_alt_err</span> <span class="o">-</span> <span class="n">prev_alt_err</span>
+<span class="c1"># Proportional terms
+</span><span class="n">pMem_alt</span> <span class="o">=</span> <span class="n">current_alt_err</span>
+<span class="c1"># Integral Terms(i(t))
+</span><span class="n">iMem_alt</span> <span class="o">+=</span> <span class="n">current_alt_err</span> <span class="o">*</span> <span class="n">dTime</span>
+<span class="c1"># limit integrand values
+</span><span class="nf">if</span><span class="p">(</span><span class="n">iMem_alt</span> <span class="o">&gt;</span> <span class="mi">800</span><span class="p">):</span> <span class="n">iMem_alt</span> <span class="o">=</span> <span class="mi">800</span>
+<span class="nf">if</span><span class="p">(</span><span class="n">iMem_alt</span> <span class="o">&lt;-</span><span class="mi">800</span><span class="p">):</span> <span class="n">iMem_alt</span> <span class="o">=</span> <span class="o">-</span><span class="mi">800</span>
+<span class="c1"># Derivative Terms(d(t))
+</span><span class="n">dMem_alt</span> <span class="o">=</span> <span class="n">dErr_alt</span> <span class="o">/</span> <span class="n">dTime</span>
+<span class="n">prev_alt_err</span> <span class="o">=</span> <span class="n">current_alt_err</span>
+<span class="n">output_alt</span> <span class="o">=</span> <span class="n">kp_thrust</span><span class="o">*</span><span class="n">pMem_alt</span> <span class="o">+</span> <span class="n">ki_thrust</span><span class="o">*</span><span class="n">iMem_alt</span> <span class="o">+</span> <span class="n">kd_thrust</span><span class="o">*</span><span class="n">dMem_alt</span>
+<span class="c1"># Final thrust
+</span><span class="n">thrust</span> <span class="o">=</span> <span class="n">hover_speed</span> <span class="o">+</span> <span class="n">output_alt</span><span class="o">*</span><span class="mf">2.5</span>
+</code></pre></div></div>
+
+<p>Now you may have noticed the p_term, i_term and d_terms. What are they? They’re values that are multiplied to the error. Doing so, they adjust the output and keep it <em>juust</em> right so that the system (drone) remains stable.</p>
+
+<p>The horror? These values are <strong>random</strong>.
+Let me say that again, THESE VALUES ARE <strong>RANDOM</strong> !!!</p>
+
+<p>Since each system is different, so are these values. While there are a few broad guidelines to tuning PIDs, they are, <em>by and large</em> left in the hands of the users themselves.</p>
+
+<blockquote>
+  <p>Q: How does one determine the <em>variables</em> that determine the <strong>fate</strong> of your system?</p>
+</blockquote>
+
+<blockquote>
+  <p>A: Trial and error :slightly_smiling_face:</p>
+</blockquote>
+
+<ul>
+  <li>Cue trying to get the drone to move autonomously 🤖</li>
+  <li>Cue countless hours of frustration 😠</li>
+  <li>Cue the poor drone being used and abused for a week straight by 3 sliding knobs 🎛️</li>
+</ul>
+
+<h2 id="flying-is-hard">Flying is Hard</h2>
+
+<p>After a couple of days of PID tuning, our drone could take off and hover stably above the ground.
+<img src="/Blogs/img/posts/eklavya-drone/drone_hover.gif" alt="Drone hovering" /></p>
+
+<p>But now came the next part of our project, <em>autonomous movement</em>. Autonomous movement is difficult for a couple of reasons:</p>
+
+<ol>
+  <li>The drone needs to orient itself to move towards the desired point</li>
+  <li>When it reaches the desired point, the drone needs to orient itself such that it stops there</li>
+</ol>
+
+<p>It was no. 2 which gave us the most grief. As the drone flew to a co-ordinate, it was simply <strong>unable</strong> to stop itself there. It then <em>overshot</em> the point and <em>backtracked</em> but the backtracking also couldn’t stop itself properly. Leading into a self-sustaining cycle of osciallations that only grew stronger with time.</p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/oscillations.png" alt="Graph of oscialltions increasing with time" /></p>
+
+<p>Despite frenzied searches on forums, meetings with mentors and conversations with each other we found only one solution to our problems. <strong>Tune the PIDs</strong></p>
+
+<blockquote>
+  <p>Q: How long can a person edit random values whose output seems only to worsen with increasing effort?</p>
+</blockquote>
+
+<blockquote>
+  <p>A: 30 mins for <em>frustration</em> -&gt; 1 hr for <em>despair</em> -&gt; 2 hrs to contemplate <em>giving up</em> -&gt; 30 mins in between to restore the spirit :+1:</p>
+</blockquote>
+
+<p>This was our daily schedule for nearly <strong><em>7-8 agonizing days</em></strong>. Given that we had only <em>1 month</em> to complete the project and we had already lost a lot of time with the issues of our model, our efforts were only getting more and more frenzied as the deadline approached.</p>
+
+<p>And still we kept on going, and going, and going……</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="n">dTime</span> <span class="o">=</span> <span class="n">current_time</span> <span class="o">-</span> <span class="n">prevTime</span>
+<span class="n">dErr_x</span> <span class="o">=</span> <span class="n">err_x</span> <span class="o">-</span> <span class="n">prevErr_x</span>
+<span class="n">dErr_y</span> <span class="o">=</span> <span class="n">err_y</span> <span class="o">-</span> <span class="n">prevErr_y</span>
+<span class="n">dErr_vel_x</span> <span class="o">=</span> <span class="n">err_vel_x</span> <span class="o">-</span> <span class="n">prevErr_vel_x</span>
+<span class="n">dErr_vel_y</span> <span class="o">=</span> <span class="n">err_vel_y</span> <span class="o">-</span> <span class="n">prevErr_vel_y</span>
+
+<span class="n">pMem_x</span> <span class="o">=</span> <span class="n">kp_x</span><span class="o">*</span><span class="n">err_x</span>
+<span class="n">pMem_y</span> <span class="o">=</span> <span class="n">kp_y</span><span class="o">*</span><span class="n">err_y</span>
+<span class="n">pMem_vel_x</span> <span class="o">=</span> <span class="n">kp_vel_x</span><span class="o">*</span><span class="n">err_x</span>
+<span class="n">pMem_vel_y</span> <span class="o">=</span> <span class="n">kp_vel_y</span><span class="o">*</span><span class="n">err_y</span>
+
+<span class="n">iMem_x</span> <span class="o">+=</span> <span class="n">err_x</span><span class="o">*</span><span class="n">dTime</span>
+<span class="n">iMem_y</span> <span class="o">+=</span> <span class="n">err_y</span><span class="o">*</span><span class="n">dTime</span>
+<span class="n">iMem_vel_x</span> <span class="o">+=</span> <span class="n">err_vel_x</span><span class="o">*</span><span class="n">dTime</span>
+<span class="n">iMem_vel_y</span> <span class="o">+=</span> <span class="n">err_vel_y</span><span class="o">*</span><span class="n">dTime</span>
+
+<span class="n">dMem_x</span> <span class="o">=</span> <span class="n">dErr_x</span><span class="o">/</span><span class="n">dTime</span>
+<span class="n">dMem_y</span> <span class="o">=</span> <span class="n">dErr_y</span><span class="o">/</span><span class="n">dTime</span>
+<span class="n">dMem_vel_x</span> <span class="o">=</span> <span class="n">dErr_vel_x</span><span class="o">/</span><span class="n">dTime</span>
+<span class="n">dMem_vel_y</span> <span class="o">=</span> <span class="n">dErr_vel_y</span><span class="o">/</span><span class="n">dTime</span>
+
+<span class="n">output_x</span> <span class="o">=</span> <span class="n">pMem_x</span> <span class="o">+</span> <span class="n">ki_x</span><span class="o">*</span><span class="n">iMem_x</span> <span class="o">+</span> <span class="n">kd_x</span><span class="o">*</span><span class="n">dMem_x</span>
+<span class="n">output_y</span> <span class="o">=</span> <span class="n">pMem_y</span> <span class="o">+</span> <span class="n">ki_y</span><span class="o">*</span><span class="n">iMem_y</span> <span class="o">+</span> <span class="n">kd_y</span><span class="o">*</span><span class="n">dMem_y</span>
+<span class="n">output_vel_x</span> <span class="o">=</span> <span class="n">pMem_vel_x</span> <span class="o">+</span> <span class="n">ki_vel_x</span><span class="o">*</span><span class="n">iMem_vel_x</span> <span class="o">+</span> <span class="n">kd_vel_x</span><span class="o">*</span><span class="n">dMem_vel_x</span>
+<span class="n">output_vel_y</span> <span class="o">=</span> <span class="n">pMem_vel_y</span> <span class="o">+</span> <span class="n">ki_vel_y</span><span class="o">*</span><span class="n">iMem_vel_y</span> <span class="o">+</span> <span class="n">kd_vel_y</span><span class="o">*</span><span class="n">dMem_vel_y</span>
+
+<span class="nf">if</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">err_x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">and</span> <span class="nf">abs</span><span class="p">(</span><span class="n">vel_x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.35</span><span class="p">):</span>
+    <span class="n">dampner</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">vel_x</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.01</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Dampner: "</span><span class="p">,</span> <span class="n">dampner</span><span class="p">)</span>
+    <span class="n">setpoint_pitch</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">vel_x</span> <span class="o">*</span> <span class="mf">1.01</span>  <span class="o">-</span> <span class="n">dampner</span><span class="p">)</span> <span class="c1">#in the direction opposite to velocity
+</span>    <span class="n">setpoint_pitch</span> <span class="o">=</span> <span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_pitch</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_pitch</span>
+    <span class="n">setpoint_pitch</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_pitch</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_pitch</span>
+
+<span class="nf">if</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">err_y</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">4</span> <span class="p">):</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="n">output_y</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nf">if</span><span class="p">(</span><span class="nf">abs</span><span class="p">(</span><span class="n">err_y</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">4</span> <span class="ow">and</span> <span class="nf">abs</span><span class="p">(</span><span class="n">vel_y</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.35</span><span class="p">):</span>
+    <span class="n">dampner_y</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">vel_y</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.01</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="p">(</span><span class="n">vel_y</span> <span class="o">*</span> <span class="mf">2.0</span>  <span class="o">-</span> <span class="n">dampner_y</span><span class="p">)</span> <span class="c1">#in the direction opposite to velocity
+</span>    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_roll</span><span class="o">&gt;</span><span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_roll</span>
+    <span class="n">setpoint_roll</span> <span class="o">=</span> <span class="o">-</span><span class="mi">10</span> <span class="nf">if </span><span class="p">(</span><span class="n">setpoint_roll</span> <span class="o">&lt;-</span><span class="mi">10</span><span class="p">)</span> <span class="k">else</span> <span class="n">setpoint_roll</span>
+
+</code></pre></div></div>
+
+<p><strong>One day before the deadline</strong>, with the help of the code written above and PID values that unbelievably seemed to align. <strong>We got it working</strong></p>
+
+<p><img src="/Blogs/img/posts/eklavya-drone/Final_output.gif" alt="Final Output" /></p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Being First Year Computer Science students this was the first “real” big team project we had worked on. Here are a few things we learnt (sometimes painfully so) about not only developing but working on any project in general:</p>
+<ul>
+  <li>Learning becomes much more fun if you get to apply it alongside! 🧑‍🔬</li>
+  <li>Having well-thought and curated resources can go a loooong way. 📚</li>
+  <li>There SHOULD be a course for effective Googling taught in all schools. 💻</li>
+  <li>The best Mentors are the ones who can guide and nudge you in the right directions while letting you figuring out the solutions on your own. 🧑‍🏫</li>
+  <li>Having a teammate who you can understand and communicate with easily makes any project 50% easier and a 100% more fun! 🥳</li>
+  <li>The final vision of a project is much <strong>much</strong> different at the beginning than the end. 👓</li>
+  <li>Having to scale back your orignal goals to meet deadlines isn’t as much accepting defeat as it is an exercise in prioritization. 😣🏆</li>
+</ul>
+
+<p>So, to any of our fellow programmers or just anyone who cared to read till this point if there’s anything to take away from this blog post, it’s that <strong>no matter what you want to do, you have the capacity to do it. Even if you have no idea how to, you can learn to.</strong></p>
+
+<!--
+(its that anything is possible and fun with the right company, guidance and the will to push a bit more than last time)
+    
+After all, if persistence and pain can conquer PIDs, it can conquer anything (Not a very good conclusion, maybe revise?)
+    
+(After all, if two First Year students can simulate a flying vehicle without burning their PCs or their brains then atleast you can do the latter)    
+
+(After all, if the two of us can prioratize all our time in tuning three knobs for a week straight then you have no excuse.)<Can be phrased better> 
+-->
+
+<p>After all, if two First Years with nothing more than some time and a lot of persistence can conquer PIDs and design a drone, you can do whatever you put your mind to too. 😊</p>
+
+<h2 id="links-and-further-reading">Links and Further Reading</h2>
+<ul>
+  <li>If we managed to hold your interest for this long, then try taking a look at our project <a href="https://github.com/Jash-Shah/Eklavya---Drone">GitHub</a></li>
+  <li>If you want to go in depth with the code and theory, take a look at our <a href="https://github.com/Jash-Shah/Eklavya---Drone/blob/main/report/Eklavya%20Report.pdf">project report</a></li>
+  <li>If you’d like to learn more about PIDs, take a look at this wonderful <a href="https://www.wescottdesign.com/articles/pid/pidWithoutAPhd.pdf">paper</a> by Tim Wescott</li>
+  <li>Check out our ever-present and helpful mentors: <a href="https://github.com/hashmis79">Saad Hashmi</a>, <a href="https://github.com/kart1802">Karthik Swaminathan</a>, <a href="https://github.com/dhruvi29">Dhruvi Doshi</a></li>
+  <li>If you’d like to learn more about us and what we do check out our profiles: <a href="https://github.com/Jash-Shah">Jash Shah</a>, <a href="https://github.com/toshan-luktuke">Toshan Luktuke</a></li>
+</ul>]]></content><author><name>Jash Shah</name></author><category term="sra" /><category term="eklavya" /><category term="robotics" /><category term="drone" /><summary type="html"><![CDATA[Persistence and PIDs: Our Journey in Drone Design]]></summary></entry></feed>

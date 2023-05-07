@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    My GSoC Journey - Part 3 - Blogs
+    
+  </title>
+
+  <meta name="description" content="Coding Begins! So, now that I got to know the Gnuastro community a bit and had discussed the plan of attack with my mentor it was time to start with the actu...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/Blogs/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="http://localhost:4000/Blogs/2022/07/01/Coding-Begins.html">
+  <link rel="alternate" type="application/rss+xml" title="Blogs" href="/Blogs/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/Blogs/">Blogs</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/Blogs/img/posts/gsoc-coding-begins/bg-coding-begins.png')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>My GSoC Journey - Part 3</h1>
+            
+            <h2 class="subheading">Week 1 & 2 - Coding Begins</h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Jash Shah</a>
+              on July 01, 2022 &middot; <span class="reading-time" title="Estimated read time">
+  
+   2 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h2 id="coding-begins">Coding Begins!</h2>
+<p>So, now that I got to know the Gnuastro community a bit and had discussed the plan of attack with my mentor it was time to start with the actual coding.</p>
+
+<h3 id="week-1">Week 1</h3>
+<p>As planned, I started with the building the extension module for <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/CosmicCalculator.html">Cosmic Calculator</a>(cosmiccal) library. A simple Python extension Module should be structed as:</p>
+
+<p><img src="/Blogs/img/posts/gsoc-coding-begins/code-block-1.png" alt="Code-Block1" /></p>
+
+<p>The cosmical library was chosen as a starting point because it contained only 6 functions and solely dealt with <em>doubles, ints, and floats</em>. Consequently, there wasn’t yet a requirement for a NumPy Converter. It was pretty straight forward to create wrappers for these functions by following the aforementioned structure. The <code class="language-plaintext highlighter-rouge">setup.py</code> script for building and installing these modules was created at the following stage. For this, I followed the <a href="https://docs.python.org/3/extending/building.html#building">Python Extension documentation’s</a> advice and utilised <a href="https://docs.python.org/3/distutils/apiref.html"><code class="language-plaintext highlighter-rouge">distutils</code></a>, which offers two crucial functions:</p>
+<ul>
+  <li><a href="https://docs.python.org/3/distutils/apiref.html#distutils.core.Extension"><u>distutils.core.Extension</u></a> which is used to describe a <code class="language-plaintext highlighter-rouge">C/C++</code> extension.</li>
+  <li><a href="https://docs.python.org/3/distutils/apiref.html#distutils.core.setup"><u>distutils.core.setup</u></a> the frontman in actually building and compiling the modules.</li>
+</ul>
+
+<p><img src="/Blogs/img/posts/gsoc-coding-begins/code-block-2.png" alt="Code-Block2" /></p>
+
+<p>After this, the commands to build and install these modules were simply:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 setup.py build
+python3 setup.py <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="week-2">Week 2</h3>
+<p>At our subsequent meeting, my mentor confirmed my work, and we both agreed that the next step should be to write the NumPy converter so that this may be <em>expanded</em> to include the other library modules as well.</p>
+
+<p>Week 2 was a little light on work because I was out of town for a few days. However, the most of my reading time was devoted to learning about the <code class="language-plaintext highlighter-rouge">NumPy C-API</code> and how it connected with the <code class="language-plaintext highlighter-rouge">Python C-API</code>.</p>
+
+<p>I discovered that a NumPy array’s primary container object was the <a href="https://numpy.org/doc/stable/reference/c-api/types-and-structures.html#c.PyArrayObject"><code class="language-plaintext highlighter-rouge">PyArrayObject</code></a>, and its <code class="language-plaintext highlighter-rouge">PyTypeObject</code> was the <a href="https://numpy.org/doc/stable/reference/c-api/types-and-structures.html#c.PyArray_Type"><code class="language-plaintext highlighter-rouge">PyArray_Type</code></a>. Therefore, in order for any <code class="language-plaintext highlighter-rouge">PyObject</code> to be regarded as a NumPy Array, it has to fulfil these two requirements.</p>
+
+<p>The API itself offered <a href="https://numpy.org/doc/stable/reference/c-api/array.html#creating-arrays">functions</a> that allowed any generic array type data container to be converted into <code class="language-plaintext highlighter-rouge">PyArray_Type</code> or one of its subclasses. For creating the converter, I would always turn to these!</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/Blogs/2022/06/26/Community-Bonding.html" data-toggle="tooltip" data-placement="top" title="My GSoC Journey - Part 2">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/Blogs/2022/07/20/How-low-can-you-go.html" data-toggle="tooltip" data-placement="top" title="My GSoC Journey - Part 4">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:gauravcjoshi17@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/gaurav17joshi">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Jash Shah 2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Blogs/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/Blogs/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>

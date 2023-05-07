@@ -1,16 +1,16 @@
-title:              Jash Shah Blogs
-email:              jash28582@gmail.com
+title:              Blogs
+email:              gauravcjoshi17@gmail.com
 description:        A small place on this vast network for me to write about my experiences with tech, people, place and life!
 author:             Jash Shah
 baseurl:            "/Blogs"
-url:                "https://jash_shah.github.io"
+url:                "https://gaurav17joshi.github.io"
 
 # Social Profiles
 twitter_username:   
-github_username:    Jash-Shah
+github_username:    gaurav17joshi
 facebook_username:  
-instagram_username:  s_jash
-linkedin_username:  Jash Shah
+instagram_username:  
+linkedin_username:  
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code

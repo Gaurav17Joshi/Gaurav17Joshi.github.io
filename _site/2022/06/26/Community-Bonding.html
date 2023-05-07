@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>
+    My GSoC Journey - Part 2 - Blogs
+    
+  </title>
+
+  <meta name="description" content="Community Bonding Period The official GSoC docs describes the Community Bonding Period as &quot;The first phase in which you get to know your community and get fa...">
+
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="/Blogs/assets/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+  <link rel="canonical" href="http://localhost:4000/Blogs/2022/06/26/Community-Bonding.html">
+  <link rel="alternate" type="application/rss+xml" title="Blogs" href="/Blogs/feed.xml">
+
+</head>
+
+
+<body>
+
+  <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="/Blogs/">Blogs</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/posts">Posts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/Blogs/contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Page Header -->
+
+<header class="masthead" style="background-image: url('/Blogs/img/posts/community-bonding.jpg')">
+  
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>My GSoC Journey - Part 2</h1>
+            
+            <h2 class="subheading">Community Bonding</h2>
+            
+            <span class="meta">Posted by
+              <a href="#">Jash Shah</a>
+              on June 26, 2022 &middot; <span class="reading-time" title="Estimated read time">
+  
+   3 mins  read </span>
+
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+        <h2 id="community-bonding-period">Community Bonding Period</h2>
+<p>The official <a href="https://google.github.io/gsocguides/student/how-gsoc-works">GSoC docs</a> describes the Community Bonding Period as <em><code class="language-plaintext highlighter-rouge">"The first phase in which you get to know your community and get familiar with their code base and work style."</code></em> So following this definition, my main goal in these few weeks(<strong>20th May - 13th June</strong>) was to get to learn the inner workings of Gnuastro and trying to understand the communication within it, by becoming an active part of the community.</p>
+
+<h3 id="week-1">Week 1</h3>
+<p>As I had my end semester exams scheduled from 9th May till 27th May, it was tough for me to be as active as I would like, so this week was majorly spent <strong>observing the communication between the different memebers of the community</strong>, mainly through our <a href="https://matrix.to/#/#gnuastro:openastronomy.org">Element(Matrix) Channel</a>. I would also browse through the <a href="https://savannah.gnu.org/bugs/?group=gnuastro">Savannah pages</a> of Gnuastro to see the current bugs/features in work, while also noting the contributions currenty being made, by reading through the great commit messages.</p>
+
+<h3 id="week-23---the-first-meet-with-mentor-">Week 2/3 - The First Meet with Mentor !!</h3>
+<p>I dedicated myself to learning about <a href="https://docs.python.org/3/extending/extending.html#compilation-and-linkage">Python Extensions</a>(whose docs are really succinct!) and testing them out by creating some sample modules during this period. It was quite inciteful as it gave me a greater perspective into what the final outcome of my project will be and what flow of work I would have to follow to achieve that.
+<br /><br />
+I was also pretty excited about finally getting to meet my mentor, <a href="https://akhlaghi.org/">Mohammad Akhlaghi</a>, who I had only talked to over the mail and IRC, but had been incredibly kind and welcoming. Taking the schedules of all other developers into cosideration as well, we decided to make <strong><code class="language-plaintext highlighter-rouge">Tuesdays 1:00PM,CEST(4:30PM IST) as our weekly meet times</code></strong>. The first meet went great, and was really fun(allbeit overwhelming) to meet all the other developers and get an insight into the awesome work everyone’s doing at Gnuastro! I presented a few slides I had prepared to give an overview of my project to the the other developers. Alongwith Mohammad, we were also able to decide a few goals for the next meet, them being:</p>
+<ul>
+  <li>Learn more about <strong><code class="language-plaintext highlighter-rouge">Python Extension Modules</code></strong> and try to extend a simple Gnuastro Library module(<a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/CosmicCalculator.html"><u>cosmiccal</u></a> in particular) into Python.</li>
+  <li>Reasearch into the <a href="https://numpy.org/doc/stable/reference/c-api/index.html"><u>NumPy C-API</u></a> and how we can go about building a converter between <a href="https://www.gnu.org/savannah-checkouts/gnu/gnuastro/manual/html_node/Generic-data-container.html"><u>Gnuastro's core data-structure</u></a> and NumPy’s <a href="https://numpy.org/doc/stable/reference/c-api/types-and-structures.html#c.PyArray_Type"><u>PyArrayObject</u></a>.</li>
+</ul>
+
+<h3 id="conclusion">Conclusion</h3>
+<p>As mentioned in the afformentioned definition of <em>Community Bonding</em> given by GSoC, I think I managed to get a good insight into the Gnuastro’s community by <strong>observing their communications and contributions</strong> while also making myself familiar with their work style!</p>
+
+
+        <hr>
+
+        <div class="clearfix">
+
+          
+          <a class="btn btn-primary float-left" href="/Blogs/2022/05/29/GSoC-What_Why_How.html" data-toggle="tooltip" data-placement="top" title="My GSoC Journey - Part 1">&larr; Previous<span class="d-none d-md-inline">
+              Post</span></a>
+          
+          
+          <a class="btn btn-primary float-right" href="/Blogs/2022/07/01/Coding-Begins.html" data-toggle="tooltip" data-placement="top" title="My GSoC Journey - Part 3">Next<span class="d-none d-md-inline">
+              Post</span> &rarr;</a>
+          
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <ul class="list-inline text-center">
+          
+          <li class="list-inline-item">
+            <a href="mailto:gauravcjoshi17@gmail.com">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="far fa-envelope fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="list-inline-item">
+            <a href="https://github.com/gaurav17joshi">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        <p class="copyright text-muted">Copyright &copy; Jash Shah 2023</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/Blogs/assets/vendor/startbootstrap-clean-blog/js/scripts.js"></script>
+
+<script src="/Blogs/assets/scripts.js"></script>
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-XXXXXXXXX-X');
+</script>
+
+
+
+</body>
+
+</html>
