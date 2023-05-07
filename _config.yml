@@ -1,16 +1,16 @@
-title:              Gaurav Joshi Blog
-email:              gauravcjoshi17@gmail.com
-description:        A Blog Theme by Start Bootstrap
-author:             Gaurav Joshi
+title:              Jash Shah Blogs
+email:              jash28582@gmail.com
+description:        A small place on this vast network for me to write about my experiences with tech, people, place and life!
+author:             Jash Shah
 baseurl:            "/Blogs"
-url:                "https://Gaurav17Joshi.github.io"
+url:                "https://jash_shah.github.io"
 
 # Social Profiles
 twitter_username:   
-github_username:    Gaurav17Joshi
+github_username:    Jash-Shah
 facebook_username:  
-instagram_username:  
-linkedin_username:  Gaurav Joshi
+instagram_username:  s_jash
+linkedin_username:  Jash Shah
 
 # Add your google-analytics ID here to activate google analytics
 google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
@@ -22,4 +22,5 @@ paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
   - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - jekyll-sitemap
+  - jemoji ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
