@@ -2,7 +2,7 @@ title:              Blogs
 email:              gauravcjoshi17@gmail.com
 description:        A blog about my journey through open source
 author:             Gaurav Joshi
-baseurl:            "/Blogs"
+baseurl:            "" #"/Blogs"
 url:                "https://gaurav17joshi.github.io"
 
 # Social Profiles
