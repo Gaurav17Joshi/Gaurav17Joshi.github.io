@@ -1,5 +1,5 @@
 {
-  "basics": {
+  "Info": {
     "name": "Albert Einstein",
     "label": "Scientist",
     "image": "",
@@ -22,7 +22,7 @@
       }
     ]
   },
-  "work": [
+  "Experience": [
     {
       "name": "Institute for Advanced Study, Princeton University",
       "position": "Professor of Theoretical Physics",
@@ -45,7 +45,7 @@
       "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
     }
   ],
-  "education": [
+  "Education": [
     {
       "institution": "University of Zurich, Zurich, Switzerland",
       "location": "Zurich, Switzerland",
@@ -134,7 +134,7 @@
       "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
     }
   ],
-  "skills": [
+  "Skills": [
     {
       "name": "Physics",
       "level": "Master",
@@ -161,7 +161,7 @@
       "icon": ""
     }
   ],
-  "interests": [
+  "Interests": [
     {
       "name": "Physics",
       "icon": "fa-solid fa-tag",
