@@ -43,3 +43,18 @@ Through interactions with over 200 students, we gained valuable feedback on how 
 <div class="caption">
     A screenshot of the real-time conversation interface where users interact with the AI assistant.
 </div>
+
+---
+
+## Overview
+
+One of the most meaningful things I’ve built is FluenTalk (https://fluentalk-frontend.web.app/), a voice-based AI platform I co-founded after my undergraduate studies last year to help people improve their spoken English.
+
+The idea was based on the observation that speech is a different form of communication than reading or writing, which is the focus of most language teaching courses. You do not translate word by word, rather you think in the language and respond in real time. Traditional methods like memorization or repeating pronunciation drills do not train this skill effectively. The only real way of improving speech is through having meaningful conversations, starting from broken sentences and gradually moving to more complex dialogue.
+
+FluenTalk was built around this insight. During early 2025, voice LLMs had become good and fast enough that they could be used to simulate real, meaningful dialogues. So instead of static lessons, we designed a system that enables users to actively converse. We created a voice-based AI assistant that users could talk to in real time, receiving feedback on grammar, fluency, and clarity as they spoke. The goal was to simulate natural conversation while still providing structured guidance.
+
+I worked on building the full system end to end, including the backend, frontend, and the integration of real-time voice interaction. More importantly, we focused a lot on how the experience felt. Speaking a new language can be uncomfortable, so we wanted the system to feel low pressure and encouraging rather than evaluative. 
+
+We tested FluenTalk with over 200 students in a school, and one of the most meaningful parts for me was seeing students look up the score that the AI gave them based on their conversations and try to one up each other. This project was meaningful to me because it was the first time I built something that people actually used and benefited from. It was not just about building a system, but about understanding how people learn and designing something that fits that process. 
+While we had to discontinue the project due to prior commitments (I had applied to grad school), this experience did prove to me that i want to try something new, build products that people want to use and pay for, so in a way even tho it did not lead of immediate success it gave me a lot of clarity on what I want to do going forward.
