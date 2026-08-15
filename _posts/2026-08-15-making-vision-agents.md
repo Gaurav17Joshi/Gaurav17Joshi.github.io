@@ -9,7 +9,7 @@ categories: sample-posts
 
 {% include figure.liquid path="assets/img/making-vision-agents/bat_final_render2.png" title="A fruit bat modelled and textured in Blender by an agent, rendered mid-flight" class="img-fluid rounded z-depth-1" %}
 <div class="caption">
-    The bat was built in Blender by an agent (GPT 5.6 luna) that could see: it wrote short Python scripts, ran them in a live Blender session, looked at the resulting screenshot, and corrected itself from there. The full flight clip is [here](/assets/video/making-vision-agents/bat_flight.mp4).
+    The bat was built in Blender by an agent (GPT 5.6 luna) that could see: it wrote short Python scripts, ran them in a live Blender session, looked at the resulting screenshot, and corrected itself from there. The full flight clip is <a href="/assets/video/making-vision-agents/bat_flight.mp4">here</a>.
 </div>
 
 This blog describes the recipes for what makes visual agents work. By visual agents I mean agents that look at images and act on them, i.e. they reason over the images they encounter during the task, instead of reasoning around them.
