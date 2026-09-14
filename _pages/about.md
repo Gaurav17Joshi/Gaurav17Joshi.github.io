@@ -35,8 +35,13 @@ Put your address / P.O. box / other info right below your picture. You can also 
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-I am an incoming `MSCS student at UC San Diego (Fall 2025)` with a background in `Computer Vision, Computer Graphics, and AI`.  
-My journey has taken me through research in inverse rendering and generative modeling, open-source contributions through Google Summer of Code, and even the co-founding of a voice-based AI startup.  
+I'm a Computer Science MS student at UC San Diego, working at the intersection of computer vision, graphics, and agentic AI.
 
-I’m broadly interested in pushing the boundaries of how AI systems perceive, generate, and interact with the visual world.
+Most of what I build falls under **vision agents** — agents that reason over the images they encounter while doing a task, instead of reasoning around them. My past research with Manmohan Chandraker had agents learn Blender material generation by watching YouTube tutorials, extracting procedural knowledge from how experts actually build materials to guide the agent. I'm now working on harness engineering for creative software, the plans, tools, and feedback loops that let an agent actually operate inside something like Blender. I write about what actually makes this work on my [blog](/blog/).
+
+I also like taking on things I don't know how to do yet: after undergrad I co-founded FluenTalk, a voice-based AI assistant for practicing spoken English, built end to end and tested with 200+ students. I shelved it once grad school started, but it left me wanting to build things people actually use and pay for, not just write papers about.
+
+Before UCSD, I was at IIT Gandhinagar, working on inverse modeling for outdoor scenes — reconstructing and re-rendering them from a single image with Gaussian splatting and NeRFs. In between: a summer at Purdue's IDEAS Lab on neural-operator surrogates for fluid simulation, and a Google Summer of Code cycle with OpenAstronomy/Stingray, writing a Gaussian-process tool to detect quasi-periodic oscillations in astronomical time series.
+
+I like closing the loop between seeing and doing, in whatever form that takes.
 

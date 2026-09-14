@@ -1,78 +1,255 @@
 {
-  "Info": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+  "basics": {
+    "name": "Gaurav Joshi",
+    "label": "Computer Vision, Graphics & Agentic AI",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "gajoshi@ucsd.edu",
+    "phone": "",
+    "url": "https://gaurav17joshi.github.io/",
+    "summary": "My research sits at the intersection of computer vision and agentic AI, focusing on how models perceive, reason about, and act within visual and digital environments. This includes work on inverse graphics, procedural content generation, and computer-use agents that translate visual and expert knowledge into executable actions.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
+      "address": "",
+      "postalCode": "",
+      "city": "San Diego",
       "countryCode": "US",
       "region": "California"
     },
     "profiles": [
       {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "network": "GitHub",
+        "username": "Gaurav17Joshi",
+        "url": "https://github.com/Gaurav17Joshi"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "gaurav-joshi-32712a242",
+        "url": "https://www.linkedin.com/in/gaurav-joshi-32712a242/"
       }
     ]
   },
-  "Experience": [
+  "education": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "institution": "University of California, San Diego",
+      "location": "San Diego, CA, USA",
+      "url": "https://ucsd.edu",
+      "area": "Computer Vision & Graphics, ML & AI",
+      "studyType": "MS in Computer Science",
+      "startDate": "2025-09-01",
+      "endDate": "",
+      "score": "3.95/4",
+      "courses": ["Advisor: Manmohan Chandraker", "GPA: 3.95/4"]
+    },
+    {
+      "institution": "Indian Institute of Technology Gandhinagar",
+      "location": "Gujarat, India",
+      "url": "https://iitgn.ac.in/",
+      "area": "Computer Science & Engineering",
+      "studyType": "B.Tech in Computer Science & Engineering",
+      "startDate": "2021-11-01",
+      "endDate": "2025-05-01",
+      "score": "3.96/4",
+      "courses": ["Advisor: Shanmuganathan Raman", "GPA: 3.96/4, Dean's List"]
     }
   ],
-  "Education": [
+  "work": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "Skills": [
+      "name": "UC San Diego – Center for Visual Computing",
+      "position": "Research Assistant",
+      "url": "https://cseweb.ucsd.edu/~mkchandraker/",
+      "location": "San Diego, CA, USA",
+      "startDate": "2025-10-01",
+      "endDate": "2026-03-01",
+      "summary": "Advisors: Manmohan Chandraker (Prof., UCSD), Kunal Gupta (PhD, UCSD)",
+      "highlights": [
+        "Conducted research on LLM-based procedural material generation for Blender using expert workflow reasoning; built automated pipelines to extract structured procedural knowledge from Blender tutorial videos via video understanding and LLM-based analysis.",
+        "Developed retrieval-time reasoning methods that synthesize expert-inspired material creation processes before compiling them into executable Blender node graphs.",
+        "Evaluated the system through expert and large-scale user studies, demonstrating improved workflow quality over graph-only procedural generation methods.",
+        "Publication: \"Reflecting Process Expertise in Procedural Material Generation\", accepted at ECCV 2026."
+      ]
+    },
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+      "name": "IIT Gandhinagar – CVIG Lab",
+      "position": "ML Intern",
+      "url": "https://iitgn.ac.in/faculty/cse/fac-shanmuganathan",
+      "location": "Gujarat, India",
+      "startDate": "2024-09-01",
+      "endDate": "2025-06-01",
+      "summary": "Advisors: Shanmuganathan Raman (Prof., IITGn), Ashish Tiwari (PhD, IITGn)",
+      "highlights": [
+        "Worked on inverse modeling for outdoor scenes from single images.",
+        "Used Gaussian Splatting and NeRF models to represent outdoor scenes and perform reconstruction/re-rendering."
+      ]
+    },
+    {
+      "name": "Purdue University – IDEAS Lab",
+      "position": "Research Intern",
+      "url": "https://ideas.cs.purdue.edu/",
+      "location": "West Lafayette, IN, USA",
+      "startDate": "2024-05-01",
+      "endDate": "2024-07-01",
+      "summary": "Advisors: Aniket Bera (Associate Prof., Purdue), Hrishikesh Vishwanath (PhD, Purdue)",
+      "highlights": [
+        "Worked on operator learning (neural operators) to build surrogates for fluid simulation (Navier-Stokes equations).",
+        "Worked on human-pair motion generation using generative neural operators."
+      ]
+    },
+    {
+      "name": "Google Summer of Code — OpenAstronomy / Stingray",
+      "position": "GSoC Contributor",
+      "url": "https://github.com/StingraySoftware/stingray/pull/739",
+      "location": "Remote",
+      "startDate": "2023-05-01",
+      "endDate": "2023-08-01",
+      "summary": "Advisors: Daniela Huppenkothen (Univ. of Amsterdam), Matteo Bachetti (INAF, Italy)",
+      "highlights": [
+        "Developed a Gaussian Processes inference tool to calculate the evidence of a QPO (Quasi-Periodic Oscillation) signal in astronomical time series from events like GRBs and magnetar/solar flares.",
+        "Made demonstration and tutorial notebooks on Bayesian inference and the project tool.",
+        "Used Jax, TinyGP, JaxNS, and tensorflow_probability.",
+        "Open-source project funded under the Google Summer of Code program."
       ]
     }
   ],
-  "Interests": [
+  "publications": [
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+      "name": "Material Apprentice: Reflecting Process Expertise in Procedural Material Generation",
+      "publisher": "European Conference on Computer Vision (ECCV) 2026",
+      "releaseDate": "2026-01-01",
+      "url": "https://materialapprentice.github.io/",
+      "summary": "with Kunal Gupta, Yen-Ru Chen, Seemandhar Jain, Ishit Mehta, Manmohan Chandraker"
+    },
+    {
+      "name": "Mitigating Simplicity Bias in Neural Networks: A Feature Sieve Modification, Regularization, and Self-Supervised Augmentation Approach",
+      "publisher": "SCSL Workshop @ ICLR 2025",
+      "releaseDate": "2025-01-01",
+      "url": "https://openreview.net/forum?id=PBLv8kiF4j",
+      "summary": "with Parth Narendra Shah, Rachit Verma"
+    },
+    {
+      "name": "Stingray 2: A Fast and Modern Python Library for Spectral Timing",
+      "publisher": "Journal of Open Source Software (JOSS), October 2024",
+      "releaseDate": "2024-10-01",
+      "url": "https://joss.theoj.org/papers/10.21105/joss.07389",
+      "summary": "Matteo Bachetti, Daniela Huppenkothen, Abigail Stevens, John Swinbank, Gaurav Joshi, et al."
+    }
+  ],
+  "projects": [
+    {
+      "name": "PDEs Solving using Physics-Informed Neural Networks",
+      "url": "https://github.com/Gaurav17Joshi/PDEs",
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-01",
+      "summary": "Self project",
+      "highlights": [
+        "Implemented PINNs to solve Laplace equations for various Dirichlet conditions.",
+        "Comparative evaluation against analytic and mesh methods.",
+        "Tools: TensorFlow, LaTeX."
       ]
+    },
+    {
+      "name": "Computational Statistics eBook",
+      "url": "https://gaurav17joshi.github.io/CompStats/intro.html",
+      "startDate": "2023-07-01",
+      "endDate": "2023-10-01",
+      "summary": "Jupyter Book",
+      "highlights": [
+        "Wrote an online book on computational statistics covering the math behind Bayesian data analysis and parameter estimation.",
+        "Covered random variable generation, Monte Carlo integration, MCMC (MH, HMC, Gibbs), Gaussian processes, information theory, sequential Monte Carlo, and graphical models."
+      ]
+    },
+    {
+      "name": "Effective Sensor Placement using Neural Processes",
+      "url": "",
+      "startDate": "2023-07-01",
+      "endDate": "2023-08-01",
+      "summary": "Mentor: Prof. Nipun Batra",
+      "highlights": [
+        "Built an ML pipeline using conditional neural processes for effective pollution sensor placement.",
+        "Used CAMx-simulated pollution data to predict future pollution levels and place sensors via a mutual information criterion.",
+        "Compared fit quality across neural processes, Gaussian processes, and other models.",
+        "Tools: PyTorch, Jax, DeepSensor."
+      ]
+    },
+    {
+      "name": "Scientific Computing eBook",
+      "url": "https://gaurav17joshi.github.io/SciComp/pages/Undjulia/",
+      "startDate": "2023-03-01",
+      "endDate": "2023-05-01",
+      "summary": "Julia eBook",
+      "highlights": [
+        "Wrote an online book on scientific computing with Julia, focused on scientific machine learning."
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Academic Excellence Award / Dean's List",
+      "date": "2021–2025",
+      "awarder": "IIT Gandhinagar, India",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "title": "Research Intern Fellowship",
+      "date": "2024",
+      "awarder": "Purdue University, West Lafayette, Indiana, USA",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "title": "Erach and Meheroo Mehta Merit Scholarship",
+      "date": "2021–2025",
+      "awarder": "IIT Gandhinagar, India",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "title": "Top 0.4 Percentile, IIT/JEE (Advanced)",
+      "date": "2021",
+      "awarder": "India",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "title": "National Fellowship, KVPY",
+      "date": "2019",
+      "awarder": "Government of India",
+      "summary": "",
+      "url": ""
+    },
+    {
+      "title": "National Scholarship, National Talent Search Examination",
+      "date": "2019",
+      "awarder": "Government of India",
+      "summary": "",
+      "url": ""
+    }
+  ],
+  "skills": [
+    {
+      "name": "Research Areas",
+      "level": "",
+      "icon": "fa-solid fa-flask",
+      "keywords": [
+        "Computer Vision",
+        "Computer Graphics",
+        "Agentic AI",
+        "Probabilistic / Bayesian ML",
+        "Deep Learning",
+        "High-Performance Computing",
+        "Numerical Analysis"
+      ]
+    },
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "icon": "fa-solid fa-code",
+      "keywords": ["Python", "JAX", "C", "C++", "Julia", "Java"]
+    },
+    {
+      "name": "Tools & Other",
+      "level": "",
+      "icon": "fa-solid fa-toolbox",
+      "keywords": ["Git / GitHub", "Jupyter Notebooks", "Google Colab", "Unix", "LaTeX", "Jekyll", "HTML"]
     }
   ]
 }

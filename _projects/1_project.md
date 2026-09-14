@@ -3,7 +3,7 @@ layout: page
 title: Computational Statistics EBook
 description: An online Jupyter Book on Bayesian Data Analysis and Parameter Estimation Methods.
 img: assets/img/Cstats_project1.png
-importance: 1
+importance: 3
 category: Work
 ---
 

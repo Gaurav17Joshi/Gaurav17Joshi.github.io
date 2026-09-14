@@ -1,14 +1,11 @@
 github_users:
   - Gaurav17Joshi
-  # - alshedivat
 
 repo_description_lines_max: 2
 
 github_repos:
-  - Gaurav17Joshi/stingray
+  - Gaurav17Joshi/Browsy
+  - StingraySoftware/stingray
   - Gaurav17Joshi/CompStats
-  # - twbs/bootstrap
-  # - jquery/jquery
-  # - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  # - jpswalsh/academicons
+  - Gaurav17Joshi/PDEs
+  - Gaurav17Joshi/SciComp

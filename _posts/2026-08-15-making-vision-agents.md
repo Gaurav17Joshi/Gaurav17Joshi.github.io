@@ -4,7 +4,6 @@ title: Making Vision Agents
 date: 2026-08-15 12:00:00
 description: Notes on what it takes to make agents that reason over the images they encounter, instead of reasoning around them.
 tags: agents vision ai
-categories: sample-posts
 ---
 
 {% include figure.liquid path="assets/img/making-vision-agents/bat_final_render2.png" title="A fruit bat modelled and textured in Blender by an agent, rendered mid-flight" class="img-fluid rounded z-depth-1" %}

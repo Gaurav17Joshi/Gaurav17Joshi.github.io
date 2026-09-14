@@ -32,16 +32,24 @@
 {% endif %}
 
 <div class="repo p-2 text-center">
-  <a href="https://github.com/{{ include.repository }}">
+  <a href="https://github.com/{{ include.repository }}" target="_blank" rel="noopener noreferrer">
     <img
       class="only-light w-100"
       alt="{{ include.repository }}"
+      loading="lazy"
       src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_light }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      onerror="this.style.display='none'; this.closest('.repo').querySelector('.repo-fallback').classList.remove('d-none');"
     >
     <img
       class="only-dark w-100"
       alt="{{ include.repository }}"
+      loading="lazy"
       src="https://github-readme-stats.vercel.app/api/pin/?username={{ repo_url[0] }}&repo={{ repo_url[1] }}&theme={{ site.repo_theme_dark }}&locale={{ lang }}&show_owner={{ show_owner }}&description_lines_count={{ max_lines }}"
+      onerror="this.style.display='none'; this.closest('.repo').querySelector('.repo-fallback').classList.remove('d-none');"
     >
+    <div class="repo-fallback d-none card p-3 text-start">
+      <h6 class="mb-1"><i class="fa-brands fa-github"></i> {{ include.repository }}</h6>
+      <p class="mb-0" style="font-size: 0.85rem; opacity: 0.7;">View repository on GitHub</p>
+    </div>
   </a>
 </div>
