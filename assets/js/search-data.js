@@ -32,14 +32,14 @@ ninja.data = [{
           },
         },{id: "nav-repositories",
           title: "Repositories",
-          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          description: "A few repositories I&#39;ve worked on, pulled live from GitHub.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/repositories/";
           },
         },{id: "nav-cv",
           title: "Cv",
-          description: "This is my Micro CV.",
+          description: "MS student at UC San Diego working on computer vision, graphics, and vision-based agentic AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -58,7 +58,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-making-vision-agents",
+            },{id: "post-building-browsy",
+        
+          title: "Building Browsy",
+        
+        description: "An agent that drives a real Chrome, with a chat panel living inside the page.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/building-browsy/";
+          
+        },
+      },{id: "post-making-vision-agents",
         
           title: "Making Vision Agents",
         
@@ -67,6 +78,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2026/making-vision-agents/";
+          
+        },
+      },{id: "post-building-fluentalk",
+        
+          title: "Building FluenTalk",
+        
+        description: "Notes on building and shelving a voice-based AI startup for practicing spoken English.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/building-fluentalk/";
           
         },
       },{id: "books-the-godfather",
@@ -100,6 +122,11 @@ ninja.data = [{
           description: "a project that redirects to another website",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
+            },},{id: "projects-browsy",
+          title: 'Browsy',
+          description: "An autonomous browser agent that drives a real Chrome, with a chat panel living inside the page.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_project/";
             },},{
         id: 'social-email',
         title: 'email',
@@ -108,11 +135,25 @@ ninja.data = [{
           window.open("mailto:%67%61%75%72%61%76%63%6A%6F%73%68%69%31%37@%67%6D%61%69%6C.%63%6F%6D", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/Gaurav17Joshi", "_blank");
+        },
+      },{
         id: 'social-inspire',
         title: 'Inspire HEP',
         section: 'Socials',
         handler: () => {
           window.open("https://inspirehep.net/authors/1010907", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/gaurav-joshi-32712a242", "_blank");
         },
       },{
         id: 'social-rss',
