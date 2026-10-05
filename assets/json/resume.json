@@ -37,10 +37,7 @@
       "startDate": "2025-09-01",
       "endDate": "",
       "score": "3.95/4",
-      "courses": [
-        "Advisor: Manmohan Chandraker",
-        "GPA: 3.95/4"
-      ]
+      "courses": ["Advisor: Manmohan Chandraker", "GPA: 3.95/4"]
     },
     {
       "institution": "Indian Institute of Technology Gandhinagar",
@@ -51,10 +48,7 @@
       "startDate": "2021-11-01",
       "endDate": "2025-05-01",
       "score": "3.96/4",
-      "courses": [
-        "Advisor: Shanmuganathan Raman",
-        "GPA: 3.96/4, Dean's List"
-      ]
+      "courses": ["Advisor: Shanmuganathan Raman", "GPA: 3.96/4, Dean's List"]
     }
   ],
   "work": [
@@ -206,9 +200,7 @@
       "startDate": "2023-03-01",
       "endDate": "2023-05-01",
       "summary": "Julia eBook",
-      "highlights": [
-        "Wrote an online book on scientific computing with Julia, focused on scientific machine learning."
-      ]
+      "highlights": ["Wrote an online book on scientific computing with Julia, focused on scientific machine learning."]
     }
   ],
   "awards": [
@@ -274,28 +266,13 @@
       "name": "Programming Languages",
       "level": "",
       "icon": "fa-solid fa-code",
-      "keywords": [
-        "Python",
-        "JAX",
-        "C",
-        "C++",
-        "Julia",
-        "Java"
-      ]
+      "keywords": ["Python", "JAX", "C", "C++", "Julia", "Java"]
     },
     {
       "name": "Tools & Other",
       "level": "",
       "icon": "fa-solid fa-toolbox",
-      "keywords": [
-        "Git / GitHub",
-        "Jupyter Notebooks",
-        "Google Colab",
-        "Unix",
-        "LaTeX",
-        "Jekyll",
-        "HTML"
-      ]
+      "keywords": ["Git / GitHub", "Jupyter Notebooks", "Google Colab", "Unix", "LaTeX", "Jekyll", "HTML"]
     }
   ]
 }
