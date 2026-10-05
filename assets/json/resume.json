@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Gaurav Joshi",
-    "label": "Computer Vision, Graphics & Agentic AI",
+    "label": "Computer Vision, Agentic AI, Computer-Use Agents, Deep Learning",
     "image": "",
     "email": "gajoshi@ucsd.edu",
     "phone": "",
@@ -37,7 +37,10 @@
       "startDate": "2025-09-01",
       "endDate": "",
       "score": "3.95/4",
-      "courses": ["Advisor: Manmohan Chandraker", "GPA: 3.95/4"]
+      "courses": [
+        "Advisor: Manmohan Chandraker",
+        "GPA: 3.95/4"
+      ]
     },
     {
       "institution": "Indian Institute of Technology Gandhinagar",
@@ -48,23 +51,44 @@
       "startDate": "2021-11-01",
       "endDate": "2025-05-01",
       "score": "3.96/4",
-      "courses": ["Advisor: Shanmuganathan Raman", "GPA: 3.96/4, Dean's List"]
+      "courses": [
+        "Advisor: Shanmuganathan Raman",
+        "GPA: 3.96/4, Dean's List"
+      ]
     }
   ],
   "work": [
     {
       "name": "UC San Diego – Center for Visual Computing",
-      "position": "Research Assistant",
+      "position": "Graduate Researcher",
       "url": "https://cseweb.ucsd.edu/~mkchandraker/",
       "location": "San Diego, CA, USA",
-      "startDate": "2025-10-01",
-      "endDate": "2026-03-01",
+      "startDate": "2025-09-01",
+      "endDate": "",
       "summary": "Advisors: Manmohan Chandraker (Prof., UCSD), Kunal Gupta (PhD, UCSD)",
       "highlights": [
-        "Conducted research on LLM-based procedural material generation for Blender using expert workflow reasoning; built automated pipelines to extract structured procedural knowledge from Blender tutorial videos via video understanding and LLM-based analysis.",
-        "Developed retrieval-time reasoning methods that synthesize expert-inspired material creation processes before compiling them into executable Blender node graphs.",
-        "Evaluated the system through expert and large-scale user studies, demonstrating improved workflow quality over graph-only procedural generation methods.",
-        "Publication: \"Reflecting Process Expertise in Procedural Material Generation\", accepted at ECCV 2026."
+        "BlendCUA: Self-Evolving Computer-Use Harness for Blender (first author). Built a computer-use agent that turns natural-language briefs and reference images into Blender assets across modelling, materials, physics simulation and animation, and that improves its own harness (tools, skills, plan checks) from experience with the model kept frozen.",
+        "Proposed learning from the defects in the agent's finished work instead of from successful trajectories, and implemented the loop end to end: an independent checker agent, a curator agent that attributes each defect to the plan, review, execution or reference views, and a rebuild gate that keeps a new skill or tool only if it fixes the defect.",
+        "Outperformed existing harnesses such as Claude Code and Codex on held-out tasks, with most learned tools and skills reused on later tasks. Under review at ICLR 2027.",
+        "Procedural Material Generation from Expert Workflows (ECCV 2026). Researched agentic LLM systems that learn from expert video demonstrations and reason over expert workflows to produce executable outputs, applied to procedural materials in Blender.",
+        "Knowledge extraction: built automated pipelines that turn Blender tutorial videos into structured procedural knowledge using video understanding and LLM-based reasoning.",
+        "Generation: helped develop retrieval-time reasoning agents that use this knowledge to plan expert-style material creation processes and compile them into executable Blender node graphs.",
+        "Supported expert and large-scale user studies showing improved workflow quality over graph-only generation baselines; paper accepted at ECCV 2026."
+      ]
+    },
+    {
+      "name": "FluenTalk",
+      "position": "Co-founder",
+      "url": "https://fluentalk-frontend.web.app/",
+      "location": "India",
+      "startDate": "2024-12-01",
+      "endDate": "2025-06-01",
+      "summary": "Voice-based AI assistant for improving spoken English",
+      "highlights": [
+        "Built a voice-based AI assistant web app for improving spoken English, tested with 200+ students.",
+        "Developed a production web app integrating OpenAI APIs for real-time voice interaction, grammar correction, and fluency feedback across practice modes such as debates and passage reading.",
+        "Architected the full-stack system: Django backend, React frontend, Firebase authentication, CockroachDB database.",
+        "Designed ML-driven feedback mechanisms improving user engagement and measurable learning outcomes."
       ]
     },
     {
@@ -110,6 +134,13 @@
     }
   ],
   "publications": [
+    {
+      "name": "BlendCUA: Self-Evolving Computer-Use Harness for Blender Use",
+      "publisher": "Under review at ICLR 2027",
+      "releaseDate": "2026-09-01",
+      "url": "https://drive.google.com/file/d/1NEYtr7mwxSe4ooh64gVN0itJCLveSnEX/view",
+      "summary": "Gaurav Joshi, Kunal Gupta, Manmohan Chandraker"
+    },
     {
       "name": "Material Apprentice: Reflecting Process Expertise in Procedural Material Generation",
       "publisher": "European Conference on Computer Vision (ECCV) 2026",
@@ -243,13 +274,28 @@
       "name": "Programming Languages",
       "level": "",
       "icon": "fa-solid fa-code",
-      "keywords": ["Python", "JAX", "C", "C++", "Julia", "Java"]
+      "keywords": [
+        "Python",
+        "JAX",
+        "C",
+        "C++",
+        "Julia",
+        "Java"
+      ]
     },
     {
       "name": "Tools & Other",
       "level": "",
       "icon": "fa-solid fa-toolbox",
-      "keywords": ["Git / GitHub", "Jupyter Notebooks", "Google Colab", "Unix", "LaTeX", "Jekyll", "HTML"]
+      "keywords": [
+        "Git / GitHub",
+        "Jupyter Notebooks",
+        "Google Colab",
+        "Unix",
+        "LaTeX",
+        "Jekyll",
+        "HTML"
+      ]
     }
   ]
 }
